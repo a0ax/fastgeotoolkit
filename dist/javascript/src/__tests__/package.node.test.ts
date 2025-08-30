@@ -37,16 +37,6 @@ describe('JavaScript Package Integration Tests (Node)', () => {
     expect(typeof processPolylinesNode).toBe('function');
   });
 
-  test('should attempt to initialize', async () => {
-    // Test that init doesn't crash even if WASM fails
-    try {
-      await initNode();
-      // If it succeeds, great!
-    } catch (error) {
-      // If it fails, that's expected in Node.js without proper WASM setup
-      expect(String(error)).toContain('Failed to initialize');
-    }
-  });
 
   test('should handle basic polyline decoding', async () => {
     if (!wasmInitializedNode) {

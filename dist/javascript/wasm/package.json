@@ -2,7 +2,7 @@
   "name": "@fastgeotoolkit/fastgeotoolkit",
   "type": "module",
   "collaborators": [
-    "fastgeotoolkit contributors"
+    "a0a7"
   ],
   "description": "A fast and comprehensive geospatial toolkit for processing GPS tracks, trajectories, and coordinate data from GPX, FIT, and polyline formats",
   "version": "0.1.3",

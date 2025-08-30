@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/fastgeotoolkit.svg)](https://www.npmjs.com/package/fastgeotoolkit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-fastgeotoolkit is a library for GPS data processing and route density mapping. The core of the library is written in Rust and compiled to webassembly for use in the browser and node. This makes it particularly fast.
+fastgeotoolkit is a library for GPS data processing and route density mapping. The core of the library is written in Rust and it's compiled to webassembly for use in the browser and node.
 
 ## What it does
 

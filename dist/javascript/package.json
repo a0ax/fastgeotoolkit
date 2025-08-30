@@ -1,6 +1,6 @@
 {
   "name": "fastgeotoolkit",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "High-performance geospatial analysis framework for route density mapping",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -38,7 +38,7 @@
     "webassembly",
     "typescript"
   ],
-  "author": "fastGeoToolkit Contributors",
+  "author": "a0a7",
   "license": "MIT",
   "repository": {
     "type": "git",
