@@ -7,7 +7,7 @@ fastgeotoolkit is a library for GPS data processing and route density mapping. T
 
 ## What it does
 
-The main use case is creating route heatmaps where you want to see which paths/routes are used most frequently. You can test this functionality at [https://activityheatmap.pages.dev/](https://activityheatmap.pages.dev/), using either your own data or sample data. This is an example of what a heatmap produced using fastgeotoolkit looks like:
+The main use case is creating route heatmaps where you want to see which paths/routes are used most frequently. You can test this functionality at [https://fastgeotoolkit-demo.pages.dev/](https://fastgeotoolkit-demo.pages.dev/), using either your own data or sample data. This is an example of what a heatmap produced using fastgeotoolkit looks like:
 ![https://i.ibb.co/MxpHbVdp/image.png](https://i.ibb.co/MxpHbVdp/image.png)
 
 However, beyond this primary usecase, this library helps you:
@@ -15,6 +15,10 @@ However, beyond this primary usecase, this library helps you:
 - Decode Google polylines 
 - Convert between GPS data formats
 
+
+## Documentation
+
+Docs are available at [https://fastgeotoolkit.pages.dev/](https://fastgeotoolkit.pages.dev/). 
 
 ## Installation
 
