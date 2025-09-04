@@ -1,11 +1,18 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { 
-  RWGPS_CLIENT_ID, 
-  RWGPS_CLIENT_SECRET 
-} from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
 export const POST: RequestHandler = async ({ request }) => {
+  const RWGPS_CLIENT_ID = env.RWGPS_CLIENT_ID;
+  const RWGPS_CLIENT_SECRET = env.RWGPS_CLIENT_SECRET;
+
+  // Check if required environment variables are set
+  if (!RWGPS_CLIENT_ID || !RWGPS_CLIENT_SECRET) {
+    return json({ 
+      error: 'RideWithGPS OAuth credentials not configured' 
+    }, { status: 500 });
+  }
+
   try {
     const { code, redirectUri } = await request.json();
 

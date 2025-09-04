@@ -1,11 +1,18 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { 
-  STRAVA_CLIENT_ID, 
-  STRAVA_CLIENT_SECRET 
-} from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
 export const POST: RequestHandler = async ({ request }) => {
+  const STRAVA_CLIENT_ID = env.STRAVA_CLIENT_ID;
+  const STRAVA_CLIENT_SECRET = env.STRAVA_CLIENT_SECRET;
+
+  // Check if required environment variables are set
+  if (!STRAVA_CLIENT_ID || !STRAVA_CLIENT_SECRET) {
+    return json({ 
+      error: 'Strava OAuth credentials not configured' 
+    }, { status: 500 });
+  }
+
   try {
     const { code } = await request.json();
 
