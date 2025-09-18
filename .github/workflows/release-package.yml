@@ -62,26 +62,26 @@ jobs:
           cd dist/python
           maturin build --release
   # Publish Rust package to crates.io
-  publish-rust:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      
-      - name: Setup Rust
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-      
-      - name: Sync packages
-        run: ./scripts/sync_packages.sh
-      
-      - name: Publish to crates.io
-        run: |
-          cd dist/rust
-          cargo publish --allow-dirty
-        env:
-          CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
+  #publish-rust:
+  #  needs: build
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #    - uses: actions/checkout@v4
+  #    
+  #    - name: Setup Rust
+  #      uses: actions-rs/toolchain@v1
+  #      with:
+  #        toolchain: stable
+  #    
+  #    - name: Sync packages
+  #      run: ./scripts/sync_packages.sh
+  #    
+  #    - name: Publish to crates.io
+  #      run: |
+  #        cd dist/rust
+  #        cargo publish --allow-dirty
+  #      env:
+  #        CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
 
   # Publish JavaScript package to NPM and GitHub Packages
   publish-javascript:
@@ -148,33 +148,33 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # Publish Python package to PyPI
-  publish-python:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      
-      - name: Setup Rust
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-      
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.8'
-      
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install maturin build twine
-      
-      - name: Sync packages
-        run: ./scripts/sync_packages.sh
-      
-      - name: Build and publish Python package
-        run: |
-          cd dist/python
-          maturin publish
-        env:
-          MATURIN_PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+  #publish-python:
+  #  needs: build
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #    - uses: actions/checkout@v4
+  #    
+  #    - name: Setup Rust
+  #      uses: actions-rs/toolchain@v1
+  #      with:
+  #        toolchain: stable
+  #    
+  #    - name: Setup Python
+  #      uses: actions/setup-python@v4
+  #      with:
+  #        python-version: '3.8'
+  #
+  #    - name: Install Python dependencies
+  #      run: |
+  #        python -m pip install --upgrade pip
+  #        pip install maturin build twine
+  #    
+  #    - name: Sync packages
+  #      run: ./scripts/sync_packages.sh
+  #    
+  #    - name: Build and publish Python package
+  #      run: |
+  #        cd dist/python
+  #        maturin publish
+  #      env:
+  #        MATURIN_PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
