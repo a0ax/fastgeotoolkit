@@ -1,7 +1,7 @@
 
-# fastgeotoolkit  [![npm](https://img.shields.io/npm/v/fastgeotoolkit)](https://www.npmjs.com/package/fastgeotoolkit)
+# fastgeotoolkit  [![npm](https://img.shields.io/npm/v/fastgeotoolkit)](https://www.npmjs.com/package/fastgeotoolkit) [![Open Docs](https://img.shields.io/badge/Documentation-skyblue?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDcuMC4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjUgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZD0iTTQ4MCA1NzZMMTkyIDU3NkMxMzkgNTc2IDk2IDUzMyA5NiA0ODBMOTYgMTYwQzk2IDEwNyAxMzkgNjQgMTkyIDY0TDQ5NiA2NEM1MjIuNSA2NCA1NDQgODUuNSA1NDQgMTEyTDU0NCA0MDBDNTQ0IDQyMC45IDUzMC42IDQzOC43IDUxMiA0NDUuM0w1MTIgNTEyQzUyOS43IDUxMiA1NDQgNTI2LjMgNTQ0IDU0NEM1NDQgNTYxLjcgNTI5LjcgNTc2IDUxMiA1NzZMNDgwIDU3NnpNMTkyIDQ0OEMxNzQuMyA0NDggMTYwIDQ2Mi4zIDE2MCA0ODBDMTYwIDQ5Ny43IDE3NC4zIDUxMiAxOTIgNTEyTDQ0OCA1MTJMNDQ4IDQ0OEwxOTIgNDQ4ek0yMjQgMjE2QzIyNCAyMjkuMyAyMzQuNyAyNDAgMjQ4IDI0MEw0MjQgMjQwQzQzNy4zIDI0MCA0NDggMjI5LjMgNDQ4IDIxNkM0NDggMjAyLjcgNDM3LjMgMTkyIDQyNCAxOTJMMjQ4IDE5MkMyMzQuNyAxOTIgMjI0IDIwMi43IDIyNCAyMTZ6TTI0OCAyODhDMjM0LjcgMjg4IDIyNCAyOTguNyAyMjQgMzEyQzIyNCAzMjUuMyAyMzQuNyAzMzYgMjQ4IDMzNkw0MjQgMzM2QzQzNy4zIDMzNiA0NDggMzI1LjMgNDQ4IDMxMkM0NDggMjk4LjcgNDM3LjMgMjg4IDQyNCAyODhMMjQ4IDI4OHoiLz48L3N2Zz4=)](https://fastgeotoolkit.pages.dev/)
 
-[![codecov](https://codecov.io/gh/a0a7/fastgeotoolkit/branch/main/graph/badge.svg)](https://codecov.io/gh/a0a7/fastgeotoolkit)
+<!--[![codecov](https://codecov.io/gh/a0a7/fastgeotoolkit/branch/main/graph/badge.svg)](https://codecov.io/gh/a0a7/fastgeotoolkit)-->
 [![Rust Tests](https://github.com/a0a7/fastgeotoolkit/actions/workflows/rust-tests.yml/badge.svg)](https://github.com/a0a7/fastgeotoolkit/actions/workflows/rust-tests.yml)
 [![JavaScript Tests](https://github.com/a0a7/fastgeotoolkit/actions/workflows/javascript-tests.yml/badge.svg)](https://github.com/a0a7/fastgeotoolkit/actions/workflows/javascript-tests.yml)
 [![CodeQL](https://github.com/a0a7/fastgeotoolkit/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/a0a7/fastgeotoolkit/actions/workflows/github-code-scanning/codeql)
@@ -10,7 +10,7 @@
 fastgeotoolkit is a library for GPS data processing and route density mapping. The core of the library is written in Rust and it's compiled to webassembly for use in the browser and node.
 
 > [!NOTE]
-> Only Javascript/Typescript is supported at the moment, despite the fact that the repo is set up for publishing Python and Rust versions of the package as well. These versions are not implemented properly, but will be at a later date.
+> Only Javascript/Typescript is supported at the moment. Rust and Python releases are planned.
 
 ## What it does
 
@@ -22,7 +22,7 @@ However, beyond this primary usecase, this library helps you:
 - Decode Google polylines 
 - Convert between GPS data formats
 
-## DOCS
+## Documentation
 
 Docs are available at https://fastgeotoolkit.pages.dev/. 
 
