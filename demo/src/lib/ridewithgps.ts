@@ -138,7 +138,8 @@ export class RideWithGPSService {
         const data = await response.json();
         const trips: RWGPSTrip[] = data.results || [];
         
-        if (trips.length === 0) {
+        // Handle case where API returns null/undefined instead of empty array
+        if (!trips || !Array.isArray(trips) || trips.length === 0) {
           break; // No more trips
         }
 
@@ -216,6 +217,12 @@ export class RideWithGPSService {
   // Extract polylines from trips
   async getPolylinesFromTrips(trips: RWGPSTrip[], onProgress?: (processed: number, total: number) => void): Promise<string[]> {
     const polylines: string[] = [];
+    
+    // Safety check for null/undefined trips array
+    if (!trips || !Array.isArray(trips)) {
+      console.warn('getPolylinesFromTrips: trips is not a valid array');
+      return polylines;
+    }
     
     console.log('Sample trip data structure:', trips.length > 0 ? trips[0] : 'No trips');
     

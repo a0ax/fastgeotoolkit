@@ -136,7 +136,8 @@ export class StravaService {
 
         const activities: StravaActivity[] = await response.json();
         
-        if (activities.length === 0) {
+        // Handle case where API returns null/undefined instead of empty array
+        if (!activities || !Array.isArray(activities) || activities.length === 0) {
           break; // No more activities
         }
 
@@ -196,6 +197,12 @@ export class StravaService {
   // Extract polylines from activities
   getPolylinesFromActivities(activities: StravaActivity[]): string[] {
     const polylines: string[] = [];
+    
+    // Safety check for null/undefined activities array
+    if (!activities || !Array.isArray(activities)) {
+      console.warn('getPolylinesFromActivities: activities is not a valid array');
+      return polylines;
+    }
     
     for (const activity of activities) {
       // Prefer detailed polyline over summary polyline

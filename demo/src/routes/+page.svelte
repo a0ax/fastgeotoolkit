@@ -462,7 +462,11 @@
       const result = await processGpxFiles(jsArray);
       console.log('Sample data processing result:', result);
 
-      if (result && result.tracks && result.tracks.length > 0) {
+      if (!result) {
+        throw new Error('WASM function returned null/undefined result');
+      }
+
+      if (result && result.tracks && Array.isArray(result.tracks) && result.tracks.length > 0) {
         const heatmapResult = result as { tracks: any[], max_frequency: number };
         
         // Use the shared rendering function
@@ -570,6 +574,10 @@
         
         if (cached && cacheAge < cacheExpiry) {
           activities = JSON.parse(cached);
+          // Safety check for parsed data
+          if (!activities || !Array.isArray(activities)) {
+            activities = [];
+          }
           stravaActivityCount = activities.length;
           stravaImportProgress = 50;
           console.log(`Using cached ${activities.length} activities from localStorage`);
@@ -577,29 +585,45 @@
       }
       
       // Fetch fresh data if no valid cache
-      if (activities.length === 0) {
+      if (!activities || activities.length === 0) {
         activities = await stravaService.fetchAllActivities((count: number) => {
           stravaActivityCount = count;
           stravaImportProgress = Math.min(50, count); // First 50% for fetching
         });
         
-        // Cache the activities in localStorage
+        // Safety check for fetched data
+        if (!activities || !Array.isArray(activities)) {
+          activities = [];
+        }
+        
+        // Cache the activities in localStorage with safe storage
         if (browser && activities.length > 0) {
-          localStorage.setItem('strava_activities', JSON.stringify(activities));
-          localStorage.setItem('strava_activities_timestamp', Date.now().toString());
-          console.log(`Cached ${activities.length} activities to localStorage`);
+          const success = safeLocalStorageSetItem('strava_activities', JSON.stringify(activities));
+          if (success) {
+            safeLocalStorageSetItem('strava_activities_timestamp', Date.now().toString());
+            console.log(`Cached ${activities.length} activities to localStorage`);
+          } else {
+            console.warn('Failed to cache activities - localStorage quota exceeded or unavailable');
+          }
         }
       }
 
       console.log(`Processing ${activities.length} activities from Strava`);
 
-      if (activities.length === 0) {
+      if (!activities || activities.length === 0) {
         error = 'No activities found in your Strava account';
         return;
       }
 
       // Extract polylines from activities
       const polylines = stravaService.getPolylinesFromActivities(activities);
+      
+      console.log('DEBUG: Extracted polylines:', {
+        count: polylines.length,
+        firstPolyline: polylines[0]?.substring(0, 100) + '...',
+        polylineTypes: polylines.slice(0, 3).map(p => typeof p),
+        polyllineLengths: polylines.slice(0, 3).map(p => p?.length)
+      });
       
       if (polylines.length === 0) {
         error = 'No GPS data found in your Strava activities';
@@ -618,8 +642,41 @@
         jsArray.push(polyline);
       }
 
-      const result = processPolylines(jsArray);
+      console.log('DEBUG: About to call processPolylines with:', {
+        arrayLength: jsArray.length,
+        firstPolylineSample: jsArray[0]?.substring(0, 50) + '...',
+        arrayType: Array.isArray(jsArray),
+        functionType: typeof processPolylines
+      });
+
+      const result = await processPolylines(jsArray);
+      
+      console.log('DEBUG: processPolylines returned:', {
+        result: result,
+        resultType: typeof result,
+        isNull: result === null,
+        isUndefined: result === undefined,
+        resultKeys: result ? Object.keys(result) : 'N/A',
+        stringified: JSON.stringify(result)?.substring(0, 200) + '...'
+      });
+      
+      if (!result) {
+        throw new Error('WASM function returned null/undefined result');
+      }
+      
       const heatmapResult = result as { tracks: any[], max_frequency: number };
+      
+      console.log('DEBUG: heatmapResult after casting:', {
+        hasTracks: 'tracks' in heatmapResult,
+        tracksType: typeof heatmapResult.tracks,
+        tracksIsArray: Array.isArray(heatmapResult.tracks),
+        tracksLength: heatmapResult.tracks?.length,
+        maxFrequency: heatmapResult.max_frequency
+      });
+      
+      if (!heatmapResult.tracks || !Array.isArray(heatmapResult.tracks)) {
+        throw new Error(`WASM function returned invalid tracks data. Got: ${JSON.stringify(heatmapResult)}`);
+      }
       
       console.log('WASM returned', heatmapResult.tracks.length, 'tracks with max frequency:', heatmapResult.max_frequency);
       
@@ -632,7 +689,13 @@
       console.log('Strava import completed successfully');
 
     } catch (err) {
-      error = `Error importing Strava activities: ${err}`;
+      // Handle localStorage quota errors more gracefully
+      if (err instanceof DOMException && err.name === 'QuotaExceededError') {
+        console.warn('localStorage quota exceeded during Strava import');
+        error = 'Import completed but could not cache data (storage full). Try clearing browser storage.';
+      } else {
+        error = `Error importing Strava activities: ${err}`;
+      }
       console.error(err);
     } finally {
       isImportingStrava = false;
@@ -680,6 +743,10 @@
         
         if (cached && cacheAge < cacheExpiry) {
           trips = JSON.parse(cached);
+          // Safety check for parsed data
+          if (!trips || !Array.isArray(trips)) {
+            trips = [];
+          }
           rwgpsTripCount = trips.length;
           rwgpsImportProgress = 50;
           console.log(`Using cached ${trips.length} trips from localStorage`);
@@ -693,11 +760,15 @@
           rwgpsImportProgress = Math.min(50, count); // First 50% for fetching
         });
         
-        // Cache the trips in localStorage
+        // Cache the trips in localStorage with safe storage
         if (browser && trips.length > 0) {
-          localStorage.setItem('rwgps_trips', JSON.stringify(trips));
-          localStorage.setItem('rwgps_trips_timestamp', Date.now().toString());
-          console.log(`Cached ${trips.length} trips to localStorage`);
+          const success = safeLocalStorageSetItem('rwgps_trips', JSON.stringify(trips));
+          if (success) {
+            safeLocalStorageSetItem('rwgps_trips_timestamp', Date.now().toString());
+            console.log(`Cached ${trips.length} trips to localStorage`);
+          } else {
+            console.warn('Failed to cache trips - localStorage quota exceeded or unavailable');
+          }
         }
       }
 
@@ -735,8 +806,17 @@
         jsArray.push(polyline);
       }
 
-      const result = processPolylines(jsArray);
+      const result = await processPolylines(jsArray);
+      
+      if (!result) {
+        throw new Error('WASM function returned null/undefined result');
+      }
+      
       const heatmapResult = result as { tracks: any[], max_frequency: number };
+      
+      if (!heatmapResult.tracks || !Array.isArray(heatmapResult.tracks)) {
+        throw new Error('WASM function returned invalid tracks data');
+      }
       
       console.log('WASM returned', heatmapResult.tracks.length, 'tracks with max frequency:', heatmapResult.max_frequency);
       
@@ -749,7 +829,13 @@
       console.log('RideWithGPS import completed successfully');
 
     } catch (err) {
-      error = `Error importing RideWithGPS trips: ${err}`;
+      // Handle localStorage quota errors more gracefully
+      if (err instanceof DOMException && err.name === 'QuotaExceededError') {
+        console.warn('localStorage quota exceeded during RideWithGPS import');
+        error = 'Import completed but could not cache data (storage full). Try clearing browser storage.';
+      } else {
+        error = `Error importing RideWithGPS trips: ${err}`;
+      }
       console.error(err);
     } finally {
       isImportingRWGPS = false;
@@ -1666,6 +1752,66 @@
       if (isMobile && !isPanelCollapsed) {
         isPanelCollapsed = true;
       }
+    }
+  }
+
+  // Safe localStorage operations
+  function safeLocalStorageSetItem(key: string, value: string): boolean {
+    if (!browser || typeof localStorage === 'undefined') {
+      return false;
+    }
+    
+    try {
+      // Clear potentially large items before setting new data
+      const keysToCheck = ['strava_activities', 'rwgps_trips'];
+      if (keysToCheck.includes(key)) {
+        // Clear old data first to free up space
+        keysToCheck.forEach(k => {
+          if (k !== key) {
+            localStorage.removeItem(k);
+            localStorage.removeItem(k + '_timestamp');
+          }
+        });
+      }
+      
+      localStorage.setItem(key, value);
+      return true;
+    } catch (error) {
+      if (error instanceof DOMException && error.name === 'QuotaExceededError') {
+        console.warn('localStorage quota exceeded, clearing cache and retrying...');
+        // Clear all cached data and try again
+        try {
+          localStorage.removeItem('strava_activities');
+          localStorage.removeItem('strava_activities_timestamp');
+          localStorage.removeItem('rwgps_trips');
+          localStorage.removeItem('rwgps_trips_timestamp');
+          localStorage.setItem(key, value);
+          return true;
+        } catch (retryError) {
+          console.warn('localStorage still failed after clearing cache:', retryError);
+          return false;
+        }
+      } else {
+        console.warn('localStorage error:', error);
+        return false;
+      }
+    }
+  }
+
+  // Clear all cached data
+  function clearLocalStorageCache() {
+    if (!browser || typeof localStorage === 'undefined') {
+      return;
+    }
+    
+    try {
+      localStorage.removeItem('strava_activities');
+      localStorage.removeItem('strava_activities_timestamp');
+      localStorage.removeItem('rwgps_trips');
+      localStorage.removeItem('rwgps_trips_timestamp');
+      console.log('Cleared all cached activity/trip data');
+    } catch (error) {
+      console.warn('Error clearing localStorage cache:', error);
     }
   }
 </script>
