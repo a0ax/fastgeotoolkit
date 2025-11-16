@@ -70,7 +70,7 @@ interface FileInfo {
 declare function init(wasmInit: any): Promise<void>;
 /**
  * Load the WASM module - users call this first, then pass result to init()
- * This avoids module resolution issues by using a simple approach
+ * This is now a convenience wrapper around the improved WASM loader
  */
 declare function loadWasm(): Promise<any>;
 /**

@@ -3,24 +3,55 @@
 /**
  * WASM module initialization utilities
  */
+let wasmModule$1 = null;
+let initPromise = null;
 /**
  * Initialize fastgeotoolkit with automatic WASM loading
  * This is a convenience function that handles WASM loading automatically
  */
 async function initWithWasm() {
-    try {
-        // Use eval to make the import completely dynamic and avoid bundler resolution issues
-        const importFunc = new Function('path', 'return import(path)');
-        const wasmModule = await importFunc('fastgeotoolkit/wasm');
-        // Initialize the WASM module
-        if (typeof wasmModule.default === 'function') {
-            await wasmModule.default();
+    if (wasmModule$1) {
+        return wasmModule$1;
+    }
+    if (initPromise) {
+        return initPromise;
+    }
+    initPromise = (async () => {
+        try {
+            // Strategy 1: Try relative path from built package (this should work with bundlers)
+            try {
+                const relativePath = '../wasm/fastgeotoolkit.js';
+                const relativeImport = await import(/* @vite-ignore */ relativePath);
+                if (typeof relativeImport.default === 'function') {
+                    await relativeImport.default();
+                }
+                wasmModule$1 = relativeImport;
+                return wasmModule$1;
+            }
+            catch (relativeError) {
+                console.warn('Relative WASM import failed:', relativeError);
+            }
+            // Strategy 2: CDN fallback for when bundling fails
+            try {
+                const cdnUrl = 'https://unpkg.com/fastgeotoolkit@latest/wasm/fastgeotoolkit.js';
+                const cdnImport = await import(/* @vite-ignore */ cdnUrl);
+                if (typeof cdnImport.default === 'function') {
+                    await cdnImport.default();
+                }
+                wasmModule$1 = cdnImport;
+                return wasmModule$1;
+            }
+            catch (cdnError) {
+                console.warn('CDN WASM import failed:', cdnError);
+            }
+            throw new Error('All WASM loading strategies failed');
         }
-        return wasmModule;
-    }
-    catch (error) {
-        throw new Error(`Failed to initialize WASM module: ${error}`);
-    }
+        catch (error) {
+            initPromise = null; // Reset so we can try again
+            throw new Error(`Failed to initialize WASM module: ${error}`);
+        }
+    })();
+    return initPromise;
 }
 /**
  * Load WASM from URL
@@ -49,12 +80,36 @@ async function loadWasmFromUrl(wasmJsUrl, wasmBgUrl) {
     }
 }
 
+var wasmLoader = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    initWithWasm: initWithWasm,
+    loadWasmFromUrl: loadWasmFromUrl
+});
+
 /**
  * fastGeoToolkit - A novel high-performance geospatial analysis framework
  * with advanced route density mapping algorithms
  */
 // WebAssembly module import (will be bundled)
 let wasmModule = null;
+let isInitialized = false;
+/**
+ * Ensure WASM is initialized before calling WASM functions
+ * This will automatically initialize if not already done
+ */
+async function ensureWasmInitialized() {
+    if (isInitialized && wasmModule) {
+        return;
+    }
+    try {
+        const { initWithWasm } = await Promise.resolve().then(function () { return wasmLoader; });
+        wasmModule = await initWithWasm();
+        isInitialized = true;
+    }
+    catch (error) {
+        throw new Error(`Failed to initialize WASM: ${error}`);
+    }
+}
 /**
  * Initialize the WebAssembly module
  * Must be called before using any WASM-based functions
@@ -65,59 +120,19 @@ async function init(wasmInit) {
         throw new Error('WASM module must be provided to init() function. Use loadWasm() to load it first.');
     }
     wasmModule = wasmInit;
+    isInitialized = true;
 }
 /**
  * Load the WASM module - users call this first, then pass result to init()
- * This avoids module resolution issues by using a simple approach
+ * This is now a convenience wrapper around the improved WASM loader
  */
 async function loadWasm() {
     try {
-        // Use Function constructor to make import completely dynamic and avoid build-time resolution
-        const dynamicImport = new Function('path', 'return import(path)');
-        let wasmModule;
-        // First try: from package exports
-        try {
-            wasmModule = await dynamicImport('fastgeotoolkit/wasm');
-        }
-        catch (e1) {
-            // Second try: relative to current module (for bundled scenario)
-            try {
-                wasmModule = await dynamicImport('./fastgeotoolkit.js');
-            }
-            catch (e2) {
-                // Third try: from dist directory
-                try {
-                    wasmModule = await dynamicImport('../dist/fastgeotoolkit.js');
-                }
-                catch (e3) {
-                    throw new Error(`Failed to import WASM module. Tried multiple paths: ${e1.message}, ${e2.message}, ${e3.message}`);
-                }
-            }
-        }
-        // Initialize the WASM module
-        if (typeof wasmModule.default === 'function') {
-            await wasmModule.default();
-        }
-        return wasmModule;
+        const { initWithWasm } = await Promise.resolve().then(function () { return wasmLoader; });
+        return await initWithWasm();
     }
     catch (error) {
         throw new Error(`Failed to load WASM module: ${error}`);
-    }
-}
-/**
- * Internal helper to ensure WASM is initialized
- * Used by all exported functions that need WASM
- */
-async function ensureWasmInitialized() {
-    if (!wasmModule) {
-        try {
-            const wasmInit = await loadWasm();
-            await init(wasmInit);
-        }
-        catch (error) {
-            console.error('Failed to initialize WASM module:', error);
-            throw error;
-        }
     }
 }
 /**

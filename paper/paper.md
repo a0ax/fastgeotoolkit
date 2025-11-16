@@ -33,13 +33,13 @@ The library handles common GPS data formats (GPX, FIT files, and Google polyline
 
 GPS route density visualization is important for urban planning, transportation analysis, trail management, and fitness applications. However, existing approaches have significant limitations:
 
-**Point-based methods create misleading results**: Traditional heatmap algorithms treat GPS tracks as collections of points, using circular density kernels that poorly represent linear features like roads and trails [@PLACEHOLDER]. This approach creates artificial hotspots where GPS devices record more frequent updates, regardless of actual route usage.
+**Point-based methods create misleading results**: Traditional heatmap algorithms treat GPS tracks as collections of points, using circular density kernels that poorly represent linear features like roads and trails [@CTANPack64]. This approach creates artificial hotspots where GPS devices record more frequent updates, regardless of actual route usage.
 
-**Variable sampling rates distort analysis**: GPS devices record data at different frequencies depending on device settings, battery optimization, and signal conditions [@PLACEHOLDER]. Point-based methods amplify these inconsistencies, making it difficult to accurately compare route popularity.
+**Variable sampling rates distort analysis**: GPS devices record data at different frequencies depending on device settings, battery optimization, and signal conditions [@CTANPack64]. Point-based methods amplify these inconsistencies, making it difficult to accurately compare route popularity.
 
-**Existing tools lack specialized algorithms**: Popular GIS software and libraries like QGIS, R's spatial packages, and Python's scipy focus on point data analysis [@PLACEHOLDER]. While these tools can process GPS tracks, they don't account for the linear nature of route data.
+**Existing tools lack specialized algorithms**: Popular GIS software and libraries like QGIS, R's spatial packages, and Python's scipy focus on point data analysis [@CTANPack64]. While these tools can process GPS tracks, they don't account for the linear nature of route data.
 
-**Commercial solutions are inaccessible**: Platforms like Strava use proprietary algorithms for route analysis that aren't available for research or custom applications [@PLACEHOLDER]. This creates a gap for developers who need similar functionality in their own projects.
+**Commercial solutions are inaccessible**: Platforms like Strava use proprietary algorithms for route analysis that aren't available for research or custom applications [@CTANPack64]. This creates a gap for developers who need similar functionality in their own projects.
 
 fastGeoToolkit addresses these issues by treating GPS tracks as sequences of connected segments rather than point clouds. This approach provides more accurate route frequency analysis without requiring complex preprocessing or server-side infrastructure.
 

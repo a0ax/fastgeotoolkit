@@ -12,8 +12,7 @@ export default defineConfig({
 		]
 	},
 	ssr: {
-		noExternal: [
-		]
+		noExternal: []
 	},
 	server: {
 		fs: {
@@ -22,10 +21,7 @@ export default defineConfig({
 	},
 	build: {
 		rollupOptions: {
-			external: ['zlib', 'fs', 'path', 'stream', 'util'],
-			output: {
-				manualChunks: undefined
-			}
+			external: ['zlib', 'fs', 'path', 'stream', 'util']
 		},
 		commonjsOptions: {
 			include: [
@@ -33,6 +29,15 @@ export default defineConfig({
 				/maplibre-gl/,
 			],
 			transformMixedEsModules: true
-		}
+		},
+		target: 'esnext'
+	},
+	// Handle WASM files properly for fastgeotoolkit
+	assetsInclude: ['**/*.wasm'],
+	worker: {
+		format: 'es'
+	},
+	define: {
+		global: 'globalThis',
 	}
 });

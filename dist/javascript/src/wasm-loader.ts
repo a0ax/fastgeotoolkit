@@ -2,25 +2,58 @@
  * WASM module initialization utilities
  */
 
+let wasmModule: any = null;
+let initPromise: Promise<any> | null = null;
+
 /**
  * Initialize fastgeotoolkit with automatic WASM loading
  * This is a convenience function that handles WASM loading automatically
  */
 export async function initWithWasm(): Promise<any> {
-  try {
-    // Use eval to make the import completely dynamic and avoid bundler resolution issues
-    const importFunc = new Function('path', 'return import(path)');
-    const wasmModule = await importFunc('fastgeotoolkit/wasm');
-    
-    // Initialize the WASM module
-    if (typeof wasmModule.default === 'function') {
-      await wasmModule.default();
-    }
-    
+  if (wasmModule) {
     return wasmModule;
-  } catch (error) {
-    throw new Error(`Failed to initialize WASM module: ${error}`);
   }
+  
+  if (initPromise) {
+    return initPromise;
+  }
+  
+  initPromise = (async () => {
+    try {
+      // Strategy 1: Try relative path from built package (this should work with bundlers)
+      try {
+        const relativePath = '../wasm/fastgeotoolkit.js';
+        const relativeImport = await import(/* @vite-ignore */ relativePath);
+        if (typeof relativeImport.default === 'function') {
+          await relativeImport.default();
+        }
+        wasmModule = relativeImport;
+        return wasmModule;
+      } catch (relativeError) {
+        console.warn('Relative WASM import failed:', relativeError);
+      }
+      
+      // Strategy 2: CDN fallback for when bundling fails
+      try {
+        const cdnUrl = 'https://unpkg.com/fastgeotoolkit@latest/wasm/fastgeotoolkit.js';
+        const cdnImport = await import(/* @vite-ignore */ cdnUrl);
+        if (typeof cdnImport.default === 'function') {
+          await cdnImport.default();
+        }
+        wasmModule = cdnImport;
+        return wasmModule;
+      } catch (cdnError) {
+        console.warn('CDN WASM import failed:', cdnError);
+      }
+      
+      throw new Error('All WASM loading strategies failed');
+    } catch (error) {
+      initPromise = null; // Reset so we can try again
+      throw new Error(`Failed to initialize WASM module: ${error}`);
+    }
+  })();
+  
+  return initPromise;
 }
 
 /**

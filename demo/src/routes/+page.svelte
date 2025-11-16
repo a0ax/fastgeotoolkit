@@ -31,7 +31,7 @@
     onAdd(map: null) {
       this._map = map;
       this._container = document.createElement('div');
-      this._container.className = 'maplibregl-ctrl maplibregl-ctrl-group ruler-control';
+      this._container.className = 'maplibregl-ctfrl maplibregl-ctrl-group ruler-control';
       
       this._button = document.createElement('button');
       this._button.className = 'ruler-control-button';
@@ -891,7 +891,7 @@
       }
     });
     
-    console.log('Strava-style multi-layer heatmap added successfully');
+    console.log('heatmap added successfully');
 
     // Fit map to show all tracks
     if (heatmapResult.tracks.length > 0) {
@@ -1424,17 +1424,58 @@
       // Initialize WASM module dynamically in browser only
       if (browser) {
         try {
+          console.log('Attempting to load fastgeotoolkit...');
+          
           // Import the published fastgeotoolkit npm package
           const fastGeoToolkit = await import('fastgeotoolkit');
+          console.log('fastgeotoolkit module loaded:', fastGeoToolkit);
           
-          // Just assign the functions - they will automatically handle WASM loading
+          // Use the package's built-in WASM initialization if available
+          if (typeof fastGeoToolkit.initWithWasm === 'function') {
+            console.log('Using built-in WASM initialization...');
+            await fastGeoToolkit.initWithWasm();
+          } else if (typeof fastGeoToolkit.ensureWasmInitialized === 'function') {
+            console.log('Using ensureWasmInitialized...');
+            await fastGeoToolkit.ensureWasmInitialized();
+          }
+          
+          // Assign the functions - they should now work with WASM loaded
           processGpxFiles = fastGeoToolkit.processGpxFiles;
           processPolylines = fastGeoToolkit.processPolylines;
           
           console.log('WASM initialized successfully from fastgeotoolkit npm package');
         } catch (err) {
           console.error('Failed to load fastgeotoolkit npm package:', err);
-          error = `Failed to load fastgeotoolkit module: ${err}`;
+          console.error('Full error details:', err);
+          
+          // If the automatic WASM loading fails, try to load from a CDN as fallback
+          try {
+            console.log('Trying CDN fallback...');
+            const cdnModule = await import('https://unpkg.com/fastgeotoolkit@latest/dist/index.esm.js');
+            
+            if (typeof cdnModule.initWithWasm === 'function') {
+              await cdnModule.initWithWasm();
+            }
+            
+            processGpxFiles = cdnModule.processGpxFiles;
+            processPolylines = cdnModule.processPolylines;
+            
+            console.log('Successfully loaded from CDN fallback');
+          } catch (cdnErr) {
+            console.error('CDN fallback also failed:', cdnErr);
+            error = `Failed to load fastgeotoolkit module: ${err}. CDN fallback also failed: ${cdnErr}`;
+            
+            // Provide more specific error information
+            if (err instanceof Error) {
+              if (err.message.includes('WASM')) {
+                error = 'WASM module failed to load. This may be due to Content Security Policy or bundling issues.';
+              } else if (err.message.includes('Failed to fetch')) {
+                error = 'Network error loading the module. Please check your internet connection.';
+              } else if (err.message.includes('Failed to resolve module specifier')) {
+                error = 'Module resolution error. The fastgeotoolkit package may not be properly bundled for this environment.';
+              }
+            }
+          }
         }
       }
 

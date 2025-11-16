@@ -5,6 +5,7 @@
 
 // WebAssembly module import (will be bundled)
 let wasmModule: any = null;
+let isInitialized = false;
 
 // Export WASM loading utilities
 export { initWithWasm, loadWasmFromUrl } from './wasm-loader.js';
@@ -62,6 +63,24 @@ export interface FileInfo {
 }
 
 /**
+ * Ensure WASM is initialized before calling WASM functions
+ * This will automatically initialize if not already done
+ */
+async function ensureWasmInitialized(): Promise<void> {
+  if (isInitialized && wasmModule) {
+    return;
+  }
+  
+  try {
+    const { initWithWasm } = await import('./wasm-loader.js');
+    wasmModule = await initWithWasm();
+    isInitialized = true;
+  } catch (error) {
+    throw new Error(`Failed to initialize WASM: ${error}`);
+  }
+}
+
+/**
  * Initialize the WebAssembly module
  * Must be called before using any WASM-based functions
  * @param wasmInit Pre-loaded WASM module (from loadWasm() helper)
@@ -72,59 +91,19 @@ export async function init(wasmInit: any): Promise<void> {
   }
   
   wasmModule = wasmInit;
+  isInitialized = true;
 }
 
 /**
  * Load the WASM module - users call this first, then pass result to init()
- * This avoids module resolution issues by using a simple approach
+ * This is now a convenience wrapper around the improved WASM loader
  */
 export async function loadWasm(): Promise<any> {
   try {
-    // Use Function constructor to make import completely dynamic and avoid build-time resolution
-    const dynamicImport = new Function('path', 'return import(path)');
-    let wasmModule;
-    
-    // First try: from package exports
-    try {
-      wasmModule = await dynamicImport('fastgeotoolkit/wasm');
-    } catch (e1) {
-      // Second try: relative to current module (for bundled scenario)
-      try {
-        wasmModule = await dynamicImport('./fastgeotoolkit.js');
-      } catch (e2) {
-        // Third try: from dist directory
-        try {
-          wasmModule = await dynamicImport('../dist/fastgeotoolkit.js');
-        } catch (e3) {
-          throw new Error(`Failed to import WASM module. Tried multiple paths: ${e1.message}, ${e2.message}, ${e3.message}`);
-        }
-      }
-    }
-    
-    // Initialize the WASM module
-    if (typeof wasmModule.default === 'function') {
-      await wasmModule.default();
-    }
-    
-    return wasmModule;
+    const { initWithWasm } = await import('./wasm-loader.js');
+    return await initWithWasm();
   } catch (error) {
     throw new Error(`Failed to load WASM module: ${error}`);
-  }
-}
-
-/**
- * Internal helper to ensure WASM is initialized
- * Used by all exported functions that need WASM
- */
-async function ensureWasmInitialized(): Promise<void> {
-  if (!wasmModule) {
-    try {
-      const wasmInit = await loadWasm();
-      await init(wasmInit);
-    } catch (error) {
-      console.error('Failed to initialize WASM module:', error);
-      throw error;
-    }
   }
 }
 
