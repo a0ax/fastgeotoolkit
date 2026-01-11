@@ -28,7 +28,6 @@ fastgeotoolkit is a high-performance library for GPS track analysis that introdu
 
 The implementation handles common GPS data formats (GPX, FIT files, and Google polylines) and provides comprehensive track processing capabilities including data validation and statistics.
 
-
 # Statement of Need
 
 GPS route density visualization is important for the logistics industry, urban planning, trail management, and fitness applications. However, existing approaches have significant limitations:
