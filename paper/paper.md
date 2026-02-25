@@ -38,7 +38,7 @@ GPS devices record data at different frequencies depending on device settings, b
 
 ## Problems with existing implementations
 
-**Existing tools lack specialized algorithms**: Popular GIS software and libraries like QGIS, R's spatial packages, and Python's scipy focus on point data analysis [@QGIS; @SciPy; @sf; @sp]. While these tools can process GPS tracks, they don't account for the linear nature of route data, and are thus largely unable to serve several use cases where preserving and processing route data with linearity in mind is important.
+**Existing tools lack specialized algorithms**: Popular GIS software and libraries like QGIS, R's spatial packages, and Python's scipy focus on point data analysis [@QGIS; @SciPy; @sf; @sp]. While these tools can process GPS tracks, they don't account for the linear nature of route data, and are thus not well-suited for use cases where preserving and processing route data with linearity in mind is important.
 
 **Commercial solutions are inaccessible**: Algorithms do exist that process route data linearly, such as those in use by Strava. However, they are largely proprietary and are generally not available for research or custom applications [@StravaProprietary]. This creates a gap for developers who need similar functionality in their own projects.
 
@@ -74,9 +74,9 @@ The algorithm runs in O(n×m) time where n is the number of tracks and m is the 
 
 The core implementation is written in Rust for memory safety and performance, then compiled to WebAssembly using wasm-pack. This enables browser-native execution without server dependencies while maintaining near-native computational speed [@Rust; @wasm].
 
-![Example heatmap produced using fastgeotoolkit and MapLibre GL JS.](heatmap.png){#heatmap width="80%"}
+![Example heatmap produced using fastgeotoolkit and MapLibre GL JS.](heatmap.png){#heatmap width="90%"}
 
-The library is distributed as an npm package[^1] with TypeScript definitions, integrating naturally with existing JavaScript mapping libraries like Leaflet and MapLibre GL JS, allowing for its use in webapps as in the above example [@leaflet; @maplibre].
+The library is distributed as an npm package[^1] with TypeScript definitions, integrating naturally with existing JavaScript mapping libraries like Leaflet and MapLibre GL JS, allowing for its use in webapps like the above example [@leaflet; @maplibre].
 
 
 
