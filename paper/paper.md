@@ -76,7 +76,7 @@ The core implementation is written in Rust for memory safety and performance, th
 
 ![Example heatmap produced using fastgeotoolkit and MapLibre GL JS.[]{label="heatmap"}](heatmap.png){#heatmap width="100%"}
 
-The library is distributed as an npm package[^1] with TypeScript definitions, integrating naturally with existing JavaScript mapping libraries like Leaflet and MapLibre GL JS, allowing for its use in webapps as exemplified in \autoref{heatmap}.
+The library is distributed as an npm package[^1] with TypeScript definitions, integrating naturally with existing JavaScript mapping libraries like Leaflet and MapLibre GL JS, allowing for its use in webapps as seen in \autoref{heatmap}.
 
 
 
