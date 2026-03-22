@@ -30,26 +30,27 @@ The implementation handles common GPS data formats (GPX, FIT files, and Google p
 
 # Statement of Need
 
-GPS route density visualization is important for the logistics industry, urban planning, trail management, and fitness applications. However, existing approaches have significant limitations:
+GPS route density visualization is essential for transportation research [@TransportationResearch], urban planning [@UrbanPlanning], trail management [@TrailManagement], and movement ecology [@MovementEcology]. Accurate route usage quantification supports evidence-based infrastructure decisions and mobility behavior analysis.
 
-**Point-based methods create misleading results**: Traditional heatmap algorithms treat GPS tracks as collections of points, using circular density kernels that poorly represent linear features like roads and trails [@Xu2024Dec]. This approach creates artificial hotspots where GPS devices record more frequent updates, regardless of actual route usage.
+## Research Gap in Route-Based Analysis
 
-GPS devices record data at different frequencies depending on device settings, battery optimization, and signal conditions [@Muller2022Apr]. Point-based methods amplify these inconsistencies, making it difficult to accurately compare route popularity.
+Current geospatial analysis treats GPS trajectories as point collections, applying kernel density estimation or clustering algorithms [@Xu2024Dec]. This introduces several problems when dealing with data where the linear route is the primary feature.
 
-## Problems with existing implementations
+**Sampling bias amplification**: GPS sampling rates vary by device settings and signal conditions [@Muller2022Apr]. Point-based methods make these inconsistencies worse, preventing accurate route comparison across datasets [@Xu2024Dec].
 
-**Existing tools lack specialized algorithms**: Popular GIS software and libraries like QGIS, R's spatial packages, and Python's scipy focus on point data analysis [@QGIS; @SciPy; @sf; @sp]. While these tools can process GPS tracks, they don't account for the linear nature of route data, and are thus not well-suited for use cases where preserving and processing route data with linearity in mind is important.
+**Parameter sensitivity**: Results change dramatically based on kernel bandwidth and grid size choices [@SimpleHeatmap], making it difficult to establish consistent analysis methods across studies.
 
-**Commercial solutions are inaccessible**: Algorithms do exist that process route data linearly, such as those in use by Strava. However, they are largely proprietary and are generally not available for research or custom applications [@StravaProprietary]. This creates a gap for developers who need similar functionality in their own projects.
+## Software Ecosystem Limitations
 
-Existing algorithms used by apps like Strava also generally rely on heavy preprocessing and do not run in the browser due to performance concerns [@StravaProprietary].
+**Inadequate existing tools**: Popular GIS software (QGIS [@QGIS], R spatial packages [@sf; @sp], Python scipy [@SciPy]) focus on static point analysis, not linear route patterns.
 
+**Computational barriers**: Most trajectory tools require preprocessing or server infrastructure [@TransportationResearch], limiting research accessibility.
 
+**Proprietary algorithms**: Commercial platforms like Strava use linear route processing [@StravaProprietary] but keep implementations closed, creating gaps in open science.
 
+## Research Contribution
 
-
-
-
+fastgeotoolkit provides the first open-source, segment-based route density algorithm for GPS track data, enabling: (1) sampling-rate-independent frequency estimation, (2) browser-native analysis workflows, and (3) standardized trajectory analysis methodologies.
 
 # Implementation
 
@@ -76,9 +77,7 @@ The core implementation is written in Rust for memory safety and performance, th
 
 ![Example heatmap produced using fastgeotoolkit and MapLibre GL JS.[]{label="heatmap"}](heatmap.png){#heatmap width="100%"}
 
-The library is distributed as an npm package[^1] with TypeScript definitions, integrating naturally with existing JavaScript mapping libraries like Leaflet and MapLibre GL JS, allowing for its use in webapps as seen in \autoref{heatmap}.
-
-
+The library is distributed as an npm package[^1] with TypeScript definitions, integrating naturally with existing JavaScript mapping libraries like Leaflet and MapLibre GL JS [@leaflet; @maplibre]. This allows for easy use in webapps as seen in \autoref{heatmap}, a screenshot from the demo page for fastgeotoolkit.
 
 # Conclusion
 
