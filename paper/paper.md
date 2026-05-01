@@ -1,11 +1,10 @@
 ---
-title: 'fastgeotoolkit: A High-Performance Geospatial Analysis Library and Segment-Based Route Density Mapping Implementation'
+title: 'fastgeotoolkit: A High-Performance Geospatial Analysis Library and Novel Route Density Mapping Implementation'
 tags:
   - Geospatial computing
   - heatmap visualization
   - GPS
   - WebAssembly
-  - JavaScript
 authors:
   - name: Alexander Akira Weimer
     orcid: 0009-0008-5679-3042
