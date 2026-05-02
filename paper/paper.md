@@ -23,9 +23,11 @@ bibliography: paper.bib
 
 # Summary
 
-fastgeotoolkit is a high-performance library for GPS track analysis that introduces a segment-based approach to route density mapping. Unlike traditional point-based heatmap algorithms, fastgeotoolkit processes GPS tracks as connected line segments to identify overlapping route usage patterns without the spatial clustering artifacts common in existing solutions.
+fastgeotoolkit is a high-performance JavaScript library that introduces a novel segment-based approach to GPS trajectory analysis and route density visualization. 
 
-The implementation handles common GPS data formats (GPX, FIT files, and Google polylines) and provides comprehensive track processing capabilities including data validation and statistics.
+This library addresses several key limitations of existing approaches to route density visualization, leveraging a segment-based algorithm that processes GPS trajectories as sequences of connected line segments. By analyzing route overlap at the segment level, fastgeotoolkit produces density visualizations that better reflect route usage patterns.
+
+The implementation is able to run on the web or locally, and handles heavy datasets well. As a result, it is a tool accessible for both research and consumer-facing development applications.
 
 # Statement of Need
 
