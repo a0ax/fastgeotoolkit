@@ -428,23 +428,29 @@
       error = '';
       console.log('Loading sample track data...');
 
-      // Load files 1 through 29.fit from static/tracks
+      // Load files 1 through 500.json from static/tracks
       const filePromises = [];
-      for (let i = 1; i <= 29; i++) {
+      for (let i = 1; i <= 300; i++) {
         filePromises.push(
-          fetch(`/tracks/${i}.fit`)
+          fetch(`/tracks/porto-test${i}.json`)
             .then(response => {
               if (!response.ok) {
-                throw new Error(`Failed to load ${i}.fit: ${response.status}`);
+                throw new Error(`Failed to load ${i}.json: ${response.status}`);
               }
-              return response.arrayBuffer();
+              return response.json(); // Parses the [[lng, lat], [lng, lat]] array directly
             })
-            .then(buffer => new Uint8Array(buffer))
         );
       }
 
-      const buffers = await Promise.all(filePromises);
-      console.log(`Loaded ${buffers.length} sample FIT files`);
+      try {
+        const tracks = await Promise.all(filePromises);
+        console.log(`Loaded ${tracks.length} sample taxi trajectory tracks`);
+        
+        // Example: Accessing the first coordinate of the first track
+        // console.log("First coordinate:", tracks[0][0]); 
+      } catch (error) {
+        console.error("Error loading tracks:", error);
+      }
 
       // Create JS array for WASM function (same as handleFiles)
       const jsArray = new Array();
