@@ -428,7 +428,7 @@
       error = '';
       console.log('Loading sample track data...');
 
-      // Load files 1 through 500.json from static/tracks
+      // Load files 1 through 300 from static/tracks
       const filePromises = [];
       for (let i = 1; i <= 300; i++) {
         filePromises.push(
@@ -437,26 +437,20 @@
               if (!response.ok) {
                 throw new Error(`Failed to load ${i}.json: ${response.status}`);
               }
-              return response.json(); // Parses the [[lng, lat], [lng, lat]] array directly
+              // FIX: Fetch as text/string because your WASM parser expects raw file data contents
+              return response.text(); 
             })
         );
       }
-      const tracks = await Promise.all(filePromises);
-      try {
-        console.log(`Loaded ${tracks.length} sample taxi trajectory tracks`);
-        
-        // Example: Accessing the first coordinate of the first track
-        // console.log("First coordinate:", tracks[0][0]); 
-      } catch (error) {
-        console.error("Error loading tracks:", error);
-      }
+      
+      const tracksDataStrings = await Promise.all(filePromises);
+      console.log(`Loaded ${tracksDataStrings.length} sample taxi trajectory text buffers`);
 
-      // Create JS array for WASM function (same as handleFiles)
+      // Create JS array for WASM function (matching your handleFiles logic)
       const jsArray = new Array();
-      for (const track of tracks) {
-        jsArray.push(track);
+      for (const fileContent of tracksDataStrings) {
+        jsArray.push(fileContent);
       }
-
 
       console.log('Calling WASM function with', jsArray.length, 'buffers');
 
@@ -484,11 +478,12 @@
 
     } catch (err) {
       console.error('Error loading sample data:', err);
-      error = `Error loading sample data: ${err}`;
+      error = `Error loading sample data: ${err instanceof Error ? err.message : err}`;
     } finally {
       isLoading = false;
     }
   }
+
 
   async function handleFiles(event: Event) {
     const input = event.target as HTMLInputElement;
