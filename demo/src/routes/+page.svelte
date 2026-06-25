@@ -454,9 +454,10 @@
 
       // Create JS array for WASM function (same as handleFiles)
       const jsArray = new Array();
-      for (const buffer of buffers) {
-        jsArray.push(buffer);
+      for (const track of tracks) {
+        jsArray.push(track);
       }
+
 
       console.log('Calling WASM function with', jsArray.length, 'buffers');
 
@@ -507,10 +508,11 @@
       console.log('Converted files to buffers:', buffers.length);
 
       // Create JS array for WASM function
-      const jsArray = new Array();
-      for (const buffer of buffers) {
-        jsArray.push(buffer);
-      }
+        const jsArray = new Array();
+        for (const track of tracks) {
+          jsArray.push(track);
+        }
+
 
       console.log('Calling WASM function with', jsArray.length, 'buffers');
 
