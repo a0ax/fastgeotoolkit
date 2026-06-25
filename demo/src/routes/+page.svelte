@@ -432,7 +432,7 @@
       const filePromises = [];
       for (let i = 1; i <= 300; i++) {
         filePromises.push(
-          fetch(`/tracks/porto-test${i}.json`)
+          fetch(`/tracks/porto-test/${i}.json`)
             .then(response => {
               if (!response.ok) {
                 throw new Error(`Failed to load ${i}.json: ${response.status}`);
