@@ -4,10 +4,12 @@ import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
 # Open and read the CSV file
-with open("data/test.csv", "r", encoding="utf-8") as csv_file:
+with open("data/train.csv", "r", encoding="utf-8") as csv_file:
     csv_reader = csv.reader(csv_file)
     
-    for row in csv_reader:
+    for i, row in enumerate(csv_reader):
+        if i > 10000:
+            break
         if not row:
             continue
             
@@ -38,7 +40,7 @@ with open("data/test.csv", "r", encoding="utf-8") as csv_file:
             pretty_xml = minidom.parseString(xml_string).toprettyxml(indent="  ")
             
             # 4. Save to a unique file named after the Route ID
-            filename = f"data/gpx/Route_{route_id}.gpx"
+            filename = f"data/big_gpx/Route_{i}.gpx"
             with open(filename, "w", encoding="utf-8") as gpx_file:
                 gpx_file.write(pretty_xml)
                 

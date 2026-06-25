@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route 1372766901620000397</name>
+    <trkseg>
+      <trkpt lat="41.148585" lon="-8.585631"/>
+      <trkpt lat="41.148558" lon="-8.585649"/>
+    </trkseg>
+  </trk>
+</gpx>

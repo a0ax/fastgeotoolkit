@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route 1372760610620000468</name>
+    <trkseg>
+      <trkpt lat="41.164362" lon="-8.632287"/>
+      <trkpt lat="41.163804" lon="-8.633502"/>
+      <trkpt lat="41.164002" lon="-8.635392"/>
+      <trkpt lat="41.164227" lon="-8.635842"/>
+      <trkpt lat="41.164488" lon="-8.636778"/>
+      <trkpt lat="41.164515" lon="-8.636886"/>
+      <trkpt lat="41.164776" lon="-8.63847"/>
+      <trkpt lat="41.165298" lon="-8.63919"/>
+      <trkpt lat="41.166261" lon="-8.640711"/>
+      <trkpt lat="41.168043" lon="-8.640495"/>
+      <trkpt lat="41.169654" lon="-8.63856"/>
+      <trkpt lat="41.171031" lon="-8.635851"/>
+      <trkpt lat="41.171832" lon="-8.632314"/>
+      <trkpt lat="41.172588" lon="-8.628714"/>
+      <trkpt lat="41.173128" lon="-8.624565"/>
+      <trkpt lat="41.173506" lon="-8.620776"/>
+      <trkpt lat="41.173866" lon="-8.617365"/>
+      <trkpt lat="41.174406" lon="-8.613603"/>
+      <trkpt lat="41.174001" lon="-8.609562"/>
+      <trkpt lat="41.172003" lon="-8.606142"/>
+      <trkpt lat="41.171229" lon="-8.602038"/>
+      <trkpt lat="41.171373" lon="-8.598204"/>
+      <trkpt lat="41.171544" lon="-8.594451"/>
+      <trkpt lat="41.169573" lon="-8.591589"/>
+      <trkpt lat="41.167791" lon="-8.588682"/>
+      <trkpt lat="41.166486" lon="-8.585226"/>
+      <trkpt lat="41.165334" lon="-8.582814"/>
+      <trkpt lat="41.163597" lon="-8.582184"/>
+      <trkpt lat="41.163732" lon="-8.58078"/>
+      <trkpt lat="41.164902" lon="-8.578557"/>
+      <trkpt lat="41.166747" lon="-8.576613"/>
+      <trkpt lat="41.168016" lon="-8.574471"/>
+      <trkpt lat="41.169294" lon="-8.572356"/>
+      <trkpt lat="41.169843" lon="-8.570619"/>
+      <trkpt lat="41.168205" lon="-8.570817"/>
+      <trkpt lat="41.167521" lon="-8.570439"/>
+      <trkpt lat="41.167503" lon="-8.570448"/>
+      <trkpt lat="41.167152" lon="-8.570394"/>
+      <trkpt lat="41.167152" lon="-8.570403"/>
+      <trkpt lat="41.167161" lon="-8.570331"/>
+    </trkseg>
+  </trk>
+</gpx>

@@ -430,9 +430,9 @@
 
       // Load files 1 through 29.fit from static/tracks
       const filePromises = [];
-      for (let i = 1; i <= 327; i++) {
+      for (let i = 1; i <= 2000; i++) {
         filePromises.push(
-          fetch(`/tracks/gpx/Route_T${i}.gpx`)
+          fetch(`/tracks/big_gpx/Route_${i}.gpx`)
             .then(response => {
               if (!response.ok) {
                 throw new Error(`Failed to load ${i}.gpx: ${response.status}`);

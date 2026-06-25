@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route 1372788371620000570</name>
+    <trkseg>
+      <trkpt lat="41.172633" lon="-8.664192"/>
+      <trkpt lat="41.173164" lon="-8.663499"/>
+      <trkpt lat="41.173128" lon="-8.663508"/>
+      <trkpt lat="41.173083" lon="-8.663499"/>
+      <trkpt lat="41.173236" lon="-8.663337"/>
+      <trkpt lat="41.174073" lon="-8.662491"/>
+      <trkpt lat="41.173803" lon="-8.662113"/>
+      <trkpt lat="41.172714" lon="-8.662662"/>
+      <trkpt lat="41.171796" lon="-8.662086"/>
+      <trkpt lat="41.171184" lon="-8.661546"/>
+      <trkpt lat="41.169987" lon="-8.660322"/>
+      <trkpt lat="41.169294" lon="-8.658819"/>
+      <trkpt lat="41.169141" lon="-8.658495"/>
+      <trkpt lat="41.169249" lon="-8.658225"/>
+      <trkpt lat="41.170059" lon="-8.657523"/>
+      <trkpt lat="41.170833" lon="-8.656794"/>
+      <trkpt lat="41.170356" lon="-8.655606"/>
+      <trkpt lat="41.169654" lon="-8.653878"/>
+      <trkpt lat="41.169969" lon="-8.653194"/>
+      <trkpt lat="41.170113" lon="-8.65314"/>
+      <trkpt lat="41.170113" lon="-8.653158"/>
+      <trkpt lat="41.170131" lon="-8.653158"/>
+      <trkpt lat="41.170104" lon="-8.653158"/>
+      <trkpt lat="41.170095" lon="-8.653158"/>
+      <trkpt lat="41.170104" lon="-8.653149"/>
+      <trkpt lat="41.170095" lon="-8.653149"/>
+      <trkpt lat="41.170095" lon="-8.65314"/>
+      <trkpt lat="41.170095" lon="-8.653149"/>
+      <trkpt lat="41.170113" lon="-8.653149"/>
+      <trkpt lat="41.170113" lon="-8.653149"/>
+      <trkpt lat="41.170095" lon="-8.653158"/>
+      <trkpt lat="41.170527" lon="-8.652942"/>
+      <trkpt lat="41.171112" lon="-8.651718"/>
+      <trkpt lat="41.17158" lon="-8.651052"/>
+      <trkpt lat="41.17212" lon="-8.651547"/>
+      <trkpt lat="41.173308" lon="-8.652978"/>
+      <trkpt lat="41.174208" lon="-8.654067"/>
+      <trkpt lat="41.174019" lon="-8.654382"/>
+      <trkpt lat="41.173884" lon="-8.654436"/>
+    </trkseg>
+  </trk>
+</gpx>

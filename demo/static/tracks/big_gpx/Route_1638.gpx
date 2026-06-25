@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route 1372676253620000267</name>
+    <trkseg>
+      <trkpt lat="41.153499" lon="-8.607762"/>
+      <trkpt lat="41.153463" lon="-8.60778"/>
+      <trkpt lat="41.153454" lon="-8.607771"/>
+      <trkpt lat="41.153472" lon="-8.607735"/>
+      <trkpt lat="41.153472" lon="-8.607735"/>
+      <trkpt lat="41.153445" lon="-8.607753"/>
+      <trkpt lat="41.153463" lon="-8.607717"/>
+      <trkpt lat="41.153481" lon="-8.607699"/>
+      <trkpt lat="41.153508" lon="-8.607654"/>
+      <trkpt lat="41.153571" lon="-8.607951"/>
+      <trkpt lat="41.153391" lon="-8.60895"/>
+      <trkpt lat="41.153607" lon="-8.609499"/>
+      <trkpt lat="41.153517" lon="-8.609769"/>
+      <trkpt lat="41.153895" lon="-8.609814"/>
+      <trkpt lat="41.154804" lon="-8.609346"/>
+      <trkpt lat="41.156262" lon="-8.6094"/>
+      <trkpt lat="41.156982" lon="-8.609247"/>
+      <trkpt lat="41.157009" lon="-8.609175"/>
+      <trkpt lat="41.157819" lon="-8.609148"/>
+      <trkpt lat="41.158989" lon="-8.609454"/>
+      <trkpt lat="41.159781" lon="-8.608905"/>
+      <trkpt lat="41.160096" lon="-8.609445"/>
+      <trkpt lat="41.160294" lon="-8.609679"/>
+      <trkpt lat="41.160015" lon="-8.609841"/>
+      <trkpt lat="41.15988" lon="-8.60976"/>
+    </trkseg>
+  </trk>
+</gpx>

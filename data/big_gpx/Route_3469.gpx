@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route 1372697837620000027</name>
+    <trkseg>
+      <trkpt lat="41.144634" lon="-8.606529"/>
+      <trkpt lat="41.144769" lon="-8.607069"/>
+      <trkpt lat="41.143869" lon="-8.607636"/>
+      <trkpt lat="41.143626" lon="-8.607807"/>
+      <trkpt lat="41.143176" lon="-8.608068"/>
+      <trkpt lat="41.143176" lon="-8.608077"/>
+      <trkpt lat="41.143167" lon="-8.608077"/>
+      <trkpt lat="41.143149" lon="-8.608086"/>
+      <trkpt lat="41.143131" lon="-8.608104"/>
+      <trkpt lat="41.142339" lon="-8.606979"/>
+      <trkpt lat="41.143203" lon="-8.605224"/>
+      <trkpt lat="41.143383" lon="-8.605161"/>
+      <trkpt lat="41.143869" lon="-8.60499"/>
+      <trkpt lat="41.145003" lon="-8.604369"/>
+      <trkpt lat="41.145462" lon="-8.603487"/>
+      <trkpt lat="41.145606" lon="-8.602155"/>
+      <trkpt lat="41.145669" lon="-8.601552"/>
+      <trkpt lat="41.145759" lon="-8.600607"/>
+      <trkpt lat="41.145921" lon="-8.600346"/>
+      <trkpt lat="41.147028" lon="-8.600409"/>
+      <trkpt lat="41.147847" lon="-8.599086"/>
+      <trkpt lat="41.147919" lon="-8.599086"/>
+      <trkpt lat="41.147982" lon="-8.599014"/>
+      <trkpt lat="41.148225" lon="-8.598717"/>
+      <trkpt lat="41.148216" lon="-8.598708"/>
+      <trkpt lat="41.148216" lon="-8.598708"/>
+      <trkpt lat="41.148216" lon="-8.598717"/>
+      <trkpt lat="41.148621" lon="-8.598393"/>
+      <trkpt lat="41.149494" lon="-8.598555"/>
+      <trkpt lat="41.150061" lon="-8.598204"/>
+      <trkpt lat="41.150907" lon="-8.597718"/>
+      <trkpt lat="41.152248" lon="-8.596944"/>
+      <trkpt lat="41.152257" lon="-8.596953"/>
+      <trkpt lat="41.152995" lon="-8.596476"/>
+      <trkpt lat="41.153823" lon="-8.596026"/>
+      <trkpt lat="41.154543" lon="-8.595621"/>
+      <trkpt lat="41.155362" lon="-8.595144"/>
+      <trkpt lat="41.156181" lon="-8.594658"/>
+      <trkpt lat="41.156154" lon="-8.594685"/>
+    </trkseg>
+  </trk>
+</gpx>
