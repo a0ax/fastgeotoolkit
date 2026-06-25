@@ -440,6 +440,11 @@
               return response.arrayBuffer();
             })
             .then(buffer => new Uint8Array(buffer))
+            .catch(err => {
+              console.warn(`skipping ${i}.gpx:`, err.message);
+              return null; 
+            })
+
         );
       }
 
