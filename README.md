@@ -12,7 +12,7 @@
 fastgeotoolkit is a library for GPS data processing and route density mapping. The core of the library is written in Rust and it's compiled to webassembly for use in the browser and node.
 
 > [!NOTE]
-> Only Javascript/Typescript is supported at the moment. Rust and Python releases are planned.
+> **Only Javascript/Typescript is fully supported at the moment. Rust and Python releases are experimental and may not work as expected**
 
 ## What it does
 
