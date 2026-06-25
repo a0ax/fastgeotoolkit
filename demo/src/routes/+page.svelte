@@ -441,9 +441,8 @@
             })
         );
       }
-
+      const tracks = await Promise.all(filePromises);
       try {
-        const tracks = await Promise.all(filePromises);
         console.log(`Loaded ${tracks.length} sample taxi trajectory tracks`);
         
         // Example: Accessing the first coordinate of the first track
