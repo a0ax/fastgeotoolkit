@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T158</name>
+    <trkseg>
+      <trkpt lat="41.146839" lon="-8.620038"/>
+      <trkpt lat="41.146884" lon="-8.619993"/>
+      <trkpt lat="41.146884" lon="-8.620011"/>
+      <trkpt lat="41.146893" lon="-8.620038"/>
+      <trkpt lat="41.146497" lon="-8.61993"/>
+      <trkpt lat="41.146137" lon="-8.619561"/>
+      <trkpt lat="41.146326" lon="-8.618256"/>
+      <trkpt lat="41.145975" lon="-8.617563"/>
+      <trkpt lat="41.145084" lon="-8.617365"/>
+      <trkpt lat="41.145093" lon="-8.617401"/>
+    </trkseg>
+  </trk>
+</gpx>

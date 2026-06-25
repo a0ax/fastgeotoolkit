@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T200</name>
+    <trkseg>
+      <trkpt lat="41.160618" lon="-8.644743"/>
+      <trkpt lat="41.160609" lon="-8.644734"/>
+      <trkpt lat="41.16078" lon="-8.645679"/>
+      <trkpt lat="41.160807" lon="-8.645832"/>
+      <trkpt lat="41.160915" lon="-8.64648"/>
+      <trkpt lat="41.161671" lon="-8.646363"/>
+      <trkpt lat="41.1615" lon="-8.646444"/>
+      <trkpt lat="41.1615" lon="-8.646453"/>
+      <trkpt lat="41.161509" lon="-8.646453"/>
+      <trkpt lat="41.16114" lon="-8.646525"/>
+      <trkpt lat="41.160618" lon="-8.645571"/>
+      <trkpt lat="41.160447" lon="-8.64441"/>
+      <trkpt lat="41.160411" lon="-8.644176"/>
+      <trkpt lat="41.160411" lon="-8.644185"/>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T8</name>
+    <trkseg>
+      <trkpt lat="41.181057" lon="-8.582922"/>
+      <trkpt lat="41.181813" lon="-8.582004"/>
+      <trkpt lat="41.182965" lon="-8.581077"/>
+      <trkpt lat="41.184018" lon="-8.580114"/>
+      <trkpt lat="41.184774" lon="-8.579214"/>
+      <trkpt lat="41.185557" lon="-8.578341"/>
+      <trkpt lat="41.186097" lon="-8.577549"/>
+      <trkpt lat="41.186178" lon="-8.576793"/>
+      <trkpt lat="41.186664" lon="-8.575443"/>
+      <trkpt lat="41.1867" lon="-8.5752"/>
+      <trkpt lat="41.186682" lon="-8.5752"/>
+      <trkpt lat="41.186673" lon="-8.575173"/>
+      <trkpt lat="41.186664" lon="-8.575155"/>
+      <trkpt lat="41.18652" lon="-8.575884"/>
+      <trkpt lat="41.18607" lon="-8.577027"/>
+      <trkpt lat="41.186097" lon="-8.577531"/>
+      <trkpt lat="41.185242" lon="-8.578773"/>
+    </trkseg>
+  </trk>
+</gpx>

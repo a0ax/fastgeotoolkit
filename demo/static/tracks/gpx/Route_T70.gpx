@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T70</name>
+    <trkseg>
+      <trkpt lat="41.157378" lon="-8.628201"/>
+      <trkpt lat="41.157387" lon="-8.62821"/>
+      <trkpt lat="41.157369" lon="-8.628246"/>
+      <trkpt lat="41.157351" lon="-8.628264"/>
+      <trkpt lat="41.157513" lon="-8.628174"/>
+      <trkpt lat="41.157576" lon="-8.627013"/>
+      <trkpt lat="41.157324" lon="-8.625411"/>
+      <trkpt lat="41.157234" lon="-8.62515"/>
+      <trkpt lat="41.157081" lon="-8.624907"/>
+    </trkseg>
+  </trk>
+</gpx>

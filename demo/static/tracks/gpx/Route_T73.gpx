@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T73</name>
+    <trkseg>
+      <trkpt lat="41.148531" lon="-8.585595"/>
+      <trkpt lat="41.148666" lon="-8.585676"/>
+      <trkpt lat="41.148846" lon="-8.585703"/>
+      <trkpt lat="41.148963" lon="-8.58582"/>
+      <trkpt lat="41.148972" lon="-8.585955"/>
+      <trkpt lat="41.149053" lon="-8.587026"/>
+      <trkpt lat="41.149683" lon="-8.589357"/>
+      <trkpt lat="41.150385" lon="-8.591895"/>
+      <trkpt lat="41.150754" lon="-8.593443"/>
+      <trkpt lat="41.150745" lon="-8.593416"/>
+      <trkpt lat="41.150772" lon="-8.593407"/>
+    </trkseg>
+  </trk>
+</gpx>

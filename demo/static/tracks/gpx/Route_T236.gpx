@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T236</name>
+    <trkseg>
+      <trkpt lat="41.145714" lon="-8.61075"/>
+      <trkpt lat="41.146011" lon="-8.610669"/>
+      <trkpt lat="41.146767" lon="-8.609499"/>
+    </trkseg>
+  </trk>
+</gpx>

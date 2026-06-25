@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T79</name>
+    <trkseg>
+      <trkpt lat="41.180256" lon="-8.609238"/>
+      <trkpt lat="41.183622" lon="-8.609391"/>
+      <trkpt lat="41.184504" lon="-8.609328"/>
+      <trkpt lat="41.184396" lon="-8.606358"/>
+      <trkpt lat="41.184" lon="-8.604612"/>
+      <trkpt lat="41.184009" lon="-8.60454"/>
+      <trkpt lat="41.184" lon="-8.604369"/>
+      <trkpt lat="41.183451" lon="-8.602686"/>
+      <trkpt lat="41.182866" lon="-8.600346"/>
+      <trkpt lat="41.182425" lon="-8.59878"/>
+      <trkpt lat="41.182146" lon="-8.5977"/>
+      <trkpt lat="41.184063" lon="-8.596809"/>
+    </trkseg>
+  </trk>
+</gpx>

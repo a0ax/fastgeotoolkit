@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T269</name>
+    <trkseg>
+      <trkpt lat="41.14674" lon="-8.611515"/>
+      <trkpt lat="41.146371" lon="-8.611551"/>
+      <trkpt lat="41.146299" lon="-8.61156"/>
+      <trkpt lat="41.146074" lon="-8.611461"/>
+      <trkpt lat="41.145615" lon="-8.610849"/>
+      <trkpt lat="41.144508" lon="-8.611731"/>
+      <trkpt lat="41.143284" lon="-8.613387"/>
+      <trkpt lat="41.142726" lon="-8.61453"/>
+      <trkpt lat="41.141952" lon="-8.615178"/>
+      <trkpt lat="41.140836" lon="-8.615214"/>
+      <trkpt lat="41.141025" lon="-8.614422"/>
+      <trkpt lat="41.141574" lon="-8.613216"/>
+      <trkpt lat="41.140818" lon="-8.609796"/>
+      <trkpt lat="41.139576" lon="-8.609319"/>
+      <trkpt lat="41.138757" lon="-8.609733"/>
+    </trkseg>
+  </trk>
+</gpx>

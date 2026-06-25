@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T63</name>
+    <trkseg>
+      <trkpt lat="41.180058" lon="-8.582184"/>
+      <trkpt lat="41.179671" lon="-8.582301"/>
+      <trkpt lat="41.177871" lon="-8.58285"/>
+      <trkpt lat="41.175666" lon="-8.583912"/>
+      <trkpt lat="41.175369" lon="-8.584092"/>
+      <trkpt lat="41.17455" lon="-8.584533"/>
+      <trkpt lat="41.172471" lon="-8.585523"/>
+      <trkpt lat="41.170968" lon="-8.586324"/>
+      <trkpt lat="41.170104" lon="-8.586747"/>
+      <trkpt lat="41.169339" lon="-8.587161"/>
+      <trkpt lat="41.169312" lon="-8.587206"/>
+      <trkpt lat="41.169321" lon="-8.587206"/>
+      <trkpt lat="41.168943" lon="-8.587404"/>
+      <trkpt lat="41.168826" lon="-8.587701"/>
+      <trkpt lat="41.168826" lon="-8.587728"/>
+      <trkpt lat="41.168835" lon="-8.587881"/>
+      <trkpt lat="41.168853" lon="-8.588025"/>
+      <trkpt lat="41.168835" lon="-8.588574"/>
+      <trkpt lat="41.168682" lon="-8.588853"/>
+      <trkpt lat="41.168592" lon="-8.589078"/>
+    </trkseg>
+  </trk>
+</gpx>

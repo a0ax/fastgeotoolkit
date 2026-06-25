@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T82</name>
+    <trkseg>
+      <trkpt lat="41.16141" lon="-8.640549"/>
+      <trkpt lat="41.161509" lon="-8.640738"/>
+      <trkpt lat="41.16168" lon="-8.640567"/>
+      <trkpt lat="41.162094" lon="-8.639766"/>
+      <trkpt lat="41.162724" lon="-8.639019"/>
+      <trkpt lat="41.162823" lon="-8.638902"/>
+      <trkpt lat="41.162985" lon="-8.638686"/>
+      <trkpt lat="41.163543" lon="-8.637768"/>
+      <trkpt lat="41.163957" lon="-8.637111"/>
+      <trkpt lat="41.163966" lon="-8.637093"/>
+      <trkpt lat="41.163975" lon="-8.637093"/>
+      <trkpt lat="41.164389" lon="-8.636598"/>
+      <trkpt lat="41.164767" lon="-8.638407"/>
+      <trkpt lat="41.164794" lon="-8.638659"/>
+      <trkpt lat="41.164911" lon="-8.638857"/>
+      <trkpt lat="41.165388" lon="-8.639325"/>
+      <trkpt lat="41.165955" lon="-8.640414"/>
+      <trkpt lat="41.167476" lon="-8.640477"/>
+      <trkpt lat="41.168835" lon="-8.639658"/>
+    </trkseg>
+  </trk>
+</gpx>

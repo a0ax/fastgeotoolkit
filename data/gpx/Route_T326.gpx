@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T326</name>
+    <trkseg>
+      <trkpt lat="41.156073" lon="-8.571699"/>
+      <trkpt lat="41.155929" lon="-8.570583"/>
+      <trkpt lat="41.155479" lon="-8.568999"/>
+      <trkpt lat="41.156055" lon="-8.570061"/>
+      <trkpt lat="41.156226" lon="-8.571681"/>
+      <trkpt lat="41.156604" lon="-8.571249"/>
+      <trkpt lat="41.157351" lon="-8.570241"/>
+      <trkpt lat="41.158107" lon="-8.568549"/>
+      <trkpt lat="41.158476" lon="-8.566722"/>
+      <trkpt lat="41.160501" lon="-8.566443"/>
+      <trkpt lat="41.162355" lon="-8.565417"/>
+      <trkpt lat="41.163102" lon="-8.565336"/>
+      <trkpt lat="41.164731" lon="-8.565804"/>
+      <trkpt lat="41.166702" lon="-8.566686"/>
+      <trkpt lat="41.167629" lon="-8.569206"/>
+    </trkseg>
+  </trk>
+</gpx>

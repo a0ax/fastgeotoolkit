@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T40</name>
+    <trkseg>
+      <trkpt lat="41.140692" lon="-8.615529"/>
+      <trkpt lat="41.140818" lon="-8.615286"/>
+      <trkpt lat="41.140881" lon="-8.61507"/>
+      <trkpt lat="41.140989" lon="-8.614638"/>
+      <trkpt lat="41.141187" lon="-8.614071"/>
+      <trkpt lat="41.141439" lon="-8.61354"/>
+      <trkpt lat="41.141043" lon="-8.610723"/>
+      <trkpt lat="41.140917" lon="-8.610219"/>
+      <trkpt lat="41.140845" lon="-8.609409"/>
+      <trkpt lat="41.141169" lon="-8.60805"/>
+      <trkpt lat="41.141529" lon="-8.606646"/>
+      <trkpt lat="41.141394" lon="-8.607249"/>
+      <trkpt lat="41.140899" lon="-8.609472"/>
+      <trkpt lat="41.140962" lon="-8.610021"/>
+      <trkpt lat="41.141394" lon="-8.610975"/>
+      <trkpt lat="41.141439" lon="-8.613504"/>
+      <trkpt lat="41.141142" lon="-8.614404"/>
+      <trkpt lat="41.141052" lon="-8.614746"/>
+      <trkpt lat="41.140926" lon="-8.615106"/>
+      <trkpt lat="41.140809" lon="-8.615367"/>
+      <trkpt lat="41.140539" lon="-8.616168"/>
+    </trkseg>
+  </trk>
+</gpx>

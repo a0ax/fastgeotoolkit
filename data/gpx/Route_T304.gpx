@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T304</name>
+    <trkseg>
+      <trkpt lat="41.165658" lon="-8.641251"/>
+      <trkpt lat="41.165712" lon="-8.64126"/>
+      <trkpt lat="41.165721" lon="-8.641269"/>
+      <trkpt lat="41.165685" lon="-8.641863"/>
+      <trkpt lat="41.165046" lon="-8.642187"/>
+      <trkpt lat="41.165082" lon="-8.642475"/>
+      <trkpt lat="41.16474" lon="-8.642655"/>
+      <trkpt lat="41.164812" lon="-8.642673"/>
+      <trkpt lat="41.164911" lon="-8.642655"/>
+      <trkpt lat="41.164866" lon="-8.641404"/>
+    </trkseg>
+  </trk>
+</gpx>

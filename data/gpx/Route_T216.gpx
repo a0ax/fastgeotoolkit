@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T216</name>
+    <trkseg>
+      <trkpt lat="41.15799" lon="-8.574165"/>
+      <trkpt lat="41.157945" lon="-8.574156"/>
+      <trkpt lat="41.157918" lon="-8.574102"/>
+      <trkpt lat="41.157927" lon="-8.57403"/>
+      <trkpt lat="41.157909" lon="-8.573949"/>
+      <trkpt lat="41.157198" lon="-8.573931"/>
+      <trkpt lat="41.156694" lon="-8.574579"/>
+      <trkpt lat="41.156955" lon="-8.575515"/>
+      <trkpt lat="41.157054" lon="-8.576712"/>
+      <trkpt lat="41.157144" lon="-8.577657"/>
+    </trkseg>
+  </trk>
+</gpx>

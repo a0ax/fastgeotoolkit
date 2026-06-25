@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T152</name>
+    <trkseg>
+      <trkpt lat="41.153418" lon="-8.65476"/>
+      <trkpt lat="41.152626" lon="-8.654994"/>
+      <trkpt lat="41.152311" lon="-8.654769"/>
+      <trkpt lat="41.15214" lon="-8.654031"/>
+      <trkpt lat="41.15277" lon="-8.651214"/>
+      <trkpt lat="41.153598" lon="-8.650503"/>
+      <trkpt lat="41.153976" lon="-8.649666"/>
+      <trkpt lat="41.154291" lon="-8.648289"/>
+      <trkpt lat="41.155092" lon="-8.648091"/>
+      <trkpt lat="41.157099" lon="-8.648721"/>
+      <trkpt lat="41.158728" lon="-8.649441"/>
+      <trkpt lat="41.158215" lon="-8.647218"/>
+      <trkpt lat="41.155353" lon="-8.645445"/>
+      <trkpt lat="41.152077" lon="-8.643213"/>
+      <trkpt lat="41.148981" lon="-8.640675"/>
+      <trkpt lat="41.144958" lon="-8.63973"/>
+      <trkpt lat="41.140782" lon="-8.638335"/>
+      <trkpt lat="41.136849" lon="-8.635626"/>
+      <trkpt lat="41.132367" lon="-8.635482"/>
+      <trkpt lat="41.128038" lon="-8.635725"/>
+    </trkseg>
+  </trk>
+</gpx>

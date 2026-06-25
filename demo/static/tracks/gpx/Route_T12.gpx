@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T12</name>
+    <trkseg>
+      <trkpt lat="41.148603" lon="-8.585694"/>
+      <trkpt lat="41.148684" lon="-8.585757"/>
+      <trkpt lat="41.148882" lon="-8.585712"/>
+      <trkpt lat="41.148963" lon="-8.585757"/>
+      <trkpt lat="41.148954" lon="-8.585838"/>
+      <trkpt lat="41.148972" lon="-8.586063"/>
+      <trkpt lat="41.148972" lon="-8.586171"/>
+      <trkpt lat="41.149152" lon="-8.587323"/>
+      <trkpt lat="41.149386" lon="-8.588007"/>
+      <trkpt lat="41.149602" lon="-8.588736"/>
+      <trkpt lat="41.150187" lon="-8.591031"/>
+      <trkpt lat="41.150484" lon="-8.592165"/>
+      <trkpt lat="41.150493" lon="-8.592201"/>
+      <trkpt lat="41.150844" lon="-8.593389"/>
+      <trkpt lat="41.150664" lon="-8.59455"/>
+      <trkpt lat="41.149872" lon="-8.595918"/>
+      <trkpt lat="41.149431" lon="-8.596647"/>
+    </trkseg>
+  </trk>
+</gpx>

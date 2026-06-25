@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T286</name>
+    <trkseg>
+      <trkpt lat="41.145831" lon="-8.614692"/>
+      <trkpt lat="41.146011" lon="-8.613936"/>
+      <trkpt lat="41.146083" lon="-8.612631"/>
+      <trkpt lat="41.145993" lon="-8.612451"/>
+      <trkpt lat="41.145984" lon="-8.612442"/>
+      <trkpt lat="41.146029" lon="-8.61219"/>
+      <trkpt lat="41.146011" lon="-8.610939"/>
+      <trkpt lat="41.145363" lon="-8.610957"/>
+      <trkpt lat="41.145165" lon="-8.610921"/>
+      <trkpt lat="41.143599" lon="-8.610462"/>
+      <trkpt lat="41.143167" lon="-8.608869"/>
+      <trkpt lat="41.142303" lon="-8.606421"/>
+      <trkpt lat="41.143815" lon="-8.604945"/>
+      <trkpt lat="41.143401" lon="-8.603163"/>
+      <trkpt lat="41.142186" lon="-8.601921"/>
+      <trkpt lat="41.139585" lon="-8.601417"/>
+      <trkpt lat="41.137137" lon="-8.601615"/>
+      <trkpt lat="41.134707" lon="-8.602497"/>
+      <trkpt lat="41.133051" lon="-8.599905"/>
+      <trkpt lat="41.131656" lon="-8.597205"/>
+      <trkpt lat="41.13018" lon="-8.597493"/>
+      <trkpt lat="41.128101" lon="-8.598096"/>
+    </trkseg>
+  </trk>
+</gpx>

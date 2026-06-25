@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T13</name>
+    <trkseg>
+      <trkpt lat="41.159394" lon="-8.580105"/>
+      <trkpt lat="41.159358" lon="-8.580231"/>
+      <trkpt lat="41.159349" lon="-8.581518"/>
+      <trkpt lat="41.158872" lon="-8.582517"/>
+      <trkpt lat="41.158296" lon="-8.584335"/>
+    </trkseg>
+  </trk>
+</gpx>

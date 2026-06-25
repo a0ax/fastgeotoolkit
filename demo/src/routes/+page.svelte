@@ -428,35 +428,29 @@
       error = '';
       console.log('Loading sample track data...');
 
-      // Load files 1 through 500.json from static/tracks
+      // Load files 1 through 29.fit from static/tracks
       const filePromises = [];
-      for (let i = 1; i <= 300; i++) {
+      for (let i = 1; i <= 29; i++) {
         filePromises.push(
-          fetch(`/tracks/porto-test/${i}.json`)
+          fetch(`/tracks/gpx/Route_T${i}.gpx`)
             .then(response => {
               if (!response.ok) {
-                throw new Error(`Failed to load ${i}.json: ${response.status}`);
+                throw new Error(`Failed to load ${i}.gpx: ${response.status}`);
               }
-              return response.json(); // Parses the [[lng, lat], [lng, lat]] array directly
+              return response.arrayBuffer();
             })
+            .then(buffer => new Uint8Array(buffer))
         );
       }
-      const tracks = await Promise.all(filePromises);
-      try {
-        console.log(`Loaded ${tracks.length} sample taxi trajectory tracks`);
-        
-        // Example: Accessing the first coordinate of the first track
-        // console.log("First coordinate:", tracks[0][0]); 
-      } catch (error) {
-        console.error("Error loading tracks:", error);
-      }
+
+      const buffers = await Promise.all(filePromises);
+      console.log(`Loaded ${buffers.length} sample GPX files`);
 
       // Create JS array for WASM function (same as handleFiles)
       const jsArray = new Array();
-      for (const track of tracks) {
-        jsArray.push(track);
+      for (const buffer of buffers) {
+        jsArray.push(buffer);
       }
-
 
       console.log('Calling WASM function with', jsArray.length, 'buffers');
 
@@ -507,11 +501,10 @@
       console.log('Converted files to buffers:', buffers.length);
 
       // Create JS array for WASM function
-        const jsArray = new Array();
-        for (const track of tracks) {
-          jsArray.push(track);
-        }
-
+      const jsArray = new Array();
+      for (const buffer of buffers) {
+        jsArray.push(buffer);
+      }
 
       console.log('Calling WASM function with', jsArray.length, 'buffers');
 

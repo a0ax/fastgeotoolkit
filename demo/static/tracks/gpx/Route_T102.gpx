@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T102</name>
+    <trkseg>
+      <trkpt lat="41.14953" lon="-8.623053"/>
+      <trkpt lat="41.148972" lon="-8.622873"/>
+      <trkpt lat="41.148855" lon="-8.622891"/>
+      <trkpt lat="41.148774" lon="-8.622927"/>
+      <trkpt lat="41.147586" lon="-8.621739"/>
+      <trkpt lat="41.147064" lon="-8.620299"/>
+      <trkpt lat="41.146155" lon="-8.620011"/>
+      <trkpt lat="41.146308" lon="-8.61777"/>
+      <trkpt lat="41.1453" lon="-8.615835"/>
+      <trkpt lat="41.145894" lon="-8.613081"/>
+      <trkpt lat="41.145975" lon="-8.613009"/>
+      <trkpt lat="41.145993" lon="-8.610885"/>
+      <trkpt lat="41.145291" lon="-8.610804"/>
+      <trkpt lat="41.143194" lon="-8.610462"/>
+      <trkpt lat="41.14314" lon="-8.608176"/>
+      <trkpt lat="41.142798" lon="-8.605566"/>
+      <trkpt lat="41.142996" lon="-8.605449"/>
+      <trkpt lat="41.143338" lon="-8.60508"/>
+      <trkpt lat="41.143986" lon="-8.604756"/>
+      <trkpt lat="41.144148" lon="-8.605647"/>
+    </trkseg>
+  </trk>
+</gpx>

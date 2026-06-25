@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T153</name>
+    <trkseg>
+      <trkpt lat="41.175378" lon="-8.627697"/>
+      <trkpt lat="41.175342" lon="-8.62767"/>
+      <trkpt lat="41.173452" lon="-8.626851"/>
+      <trkpt lat="41.171247" lon="-8.626032"/>
+      <trkpt lat="41.171049" lon="-8.62605"/>
+      <trkpt lat="41.170923" lon="-8.626077"/>
+      <trkpt lat="41.170284" lon="-8.625969"/>
+      <trkpt lat="41.170113" lon="-8.625978"/>
+      <trkpt lat="41.169915" lon="-8.625771"/>
+      <trkpt lat="41.169456" lon="-8.62569"/>
+      <trkpt lat="41.169375" lon="-8.625591"/>
+      <trkpt lat="41.169195" lon="-8.625528"/>
+      <trkpt lat="41.169276" lon="-8.624907"/>
+    </trkseg>
+  </trk>
+</gpx>

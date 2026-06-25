@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T210</name>
+    <trkseg>
+      <trkpt lat="41.173542" lon="-8.65476"/>
+      <trkpt lat="41.173317" lon="-8.654913"/>
+      <trkpt lat="41.17284" lon="-8.654859"/>
+      <trkpt lat="41.171922" lon="-8.65494"/>
+      <trkpt lat="41.170743" lon="-8.655993"/>
+      <trkpt lat="41.170437" lon="-8.65575"/>
+      <trkpt lat="41.169555" lon="-8.653653"/>
+      <trkpt lat="41.169078" lon="-8.651259"/>
+      <trkpt lat="41.168772" lon="-8.649639"/>
+      <trkpt lat="41.168439" lon="-8.648793"/>
+      <trkpt lat="41.168133" lon="-8.649144"/>
+      <trkpt lat="41.16798" lon="-8.649459"/>
+      <trkpt lat="41.167737" lon="-8.64999"/>
+      <trkpt lat="41.167602" lon="-8.6499"/>
+      <trkpt lat="41.167494" lon="-8.64963"/>
+      <trkpt lat="41.167161" lon="-8.649675"/>
+      <trkpt lat="41.167107" lon="-8.649648"/>
+      <trkpt lat="41.167098" lon="-8.649648"/>
+      <trkpt lat="41.167053" lon="-8.649684"/>
+    </trkseg>
+  </trk>
+</gpx>

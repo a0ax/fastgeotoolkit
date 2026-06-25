@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T19</name>
+    <trkseg>
+      <trkpt lat="41.148567" lon="-8.585667"/>
+      <trkpt lat="41.148639" lon="-8.585694"/>
+      <trkpt lat="41.148747" lon="-8.585712"/>
+      <trkpt lat="41.148945" lon="-8.585775"/>
+      <trkpt lat="41.148981" lon="-8.586036"/>
+      <trkpt lat="41.149071" lon="-8.586963"/>
+      <trkpt lat="41.149449" lon="-8.588466"/>
+      <trkpt lat="41.149872" lon="-8.589996"/>
+      <trkpt lat="41.150349" lon="-8.591787"/>
+      <trkpt lat="41.150736" lon="-8.593299"/>
+      <trkpt lat="41.150763" lon="-8.593515"/>
+      <trkpt lat="41.150763" lon="-8.593497"/>
+      <trkpt lat="41.150772" lon="-8.593488"/>
+      <trkpt lat="41.150772" lon="-8.593497"/>
+      <trkpt lat="41.150772" lon="-8.593533"/>
+      <trkpt lat="41.15079" lon="-8.593506"/>
+      <trkpt lat="41.150916" lon="-8.593911"/>
+      <trkpt lat="41.151807" lon="-8.594541"/>
+      <trkpt lat="41.153301" lon="-8.595036"/>
+      <trkpt lat="41.154354" lon="-8.595396"/>
+      <trkpt lat="41.154417" lon="-8.595405"/>
+      <trkpt lat="41.155281" lon="-8.595261"/>
+      <trkpt lat="41.155749" lon="-8.595036"/>
+      <trkpt lat="41.157135" lon="-8.594244"/>
+      <trkpt lat="41.15835" lon="-8.59356"/>
+      <trkpt lat="41.159619" lon="-8.592786"/>
+      <trkpt lat="41.160492" lon="-8.592282"/>
+      <trkpt lat="41.161455" lon="-8.591688"/>
+      <trkpt lat="41.162877" lon="-8.590464"/>
+      <trkpt lat="41.16366" lon="-8.589807"/>
+      <trkpt lat="41.163687" lon="-8.589789"/>
+    </trkseg>
+  </trk>
+</gpx>

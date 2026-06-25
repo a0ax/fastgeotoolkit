@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T39</name>
+    <trkseg>
+      <trkpt lat="41.148567" lon="-8.585694"/>
+      <trkpt lat="41.148648" lon="-8.585739"/>
+      <trkpt lat="41.148747" lon="-8.585748"/>
+      <trkpt lat="41.148963" lon="-8.585847"/>
+      <trkpt lat="41.148972" lon="-8.58591"/>
+      <trkpt lat="41.148882" lon="-8.586315"/>
+      <trkpt lat="41.14836" lon="-8.586135"/>
+    </trkseg>
+  </trk>
+</gpx>

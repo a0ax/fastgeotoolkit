@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T129</name>
+    <trkseg>
+      <trkpt lat="41.168709" lon="-8.636364"/>
+      <trkpt lat="41.168232" lon="-8.635131"/>
+      <trkpt lat="41.167215" lon="-8.634618"/>
+      <trkpt lat="41.16708" lon="-8.634114"/>
+      <trkpt lat="41.165208" lon="-8.632197"/>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T128</name>
+    <trkseg>
+      <trkpt lat="41.168502" lon="-8.600607"/>
+      <trkpt lat="41.168574" lon="-8.600661"/>
+    </trkseg>
+  </trk>
+</gpx>

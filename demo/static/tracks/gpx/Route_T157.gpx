@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T157</name>
+    <trkseg>
+      <trkpt lat="41.172309" lon="-8.567667"/>
+      <trkpt lat="41.172309" lon="-8.567658"/>
+      <trkpt lat="41.172309" lon="-8.567658"/>
+      <trkpt lat="41.172309" lon="-8.567658"/>
+      <trkpt lat="41.172309" lon="-8.567649"/>
+      <trkpt lat="41.172309" lon="-8.567649"/>
+      <trkpt lat="41.1723" lon="-8.56764"/>
+      <trkpt lat="41.172309" lon="-8.56764"/>
+      <trkpt lat="41.172309" lon="-8.567649"/>
+      <trkpt lat="41.172309" lon="-8.567631"/>
+      <trkpt lat="41.172255" lon="-8.567577"/>
+      <trkpt lat="41.17176" lon="-8.567343"/>
+    </trkseg>
+  </trk>
+</gpx>

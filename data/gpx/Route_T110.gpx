@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T110</name>
+    <trkseg>
+      <trkpt lat="41.145768" lon="-8.610876"/>
+      <trkpt lat="41.14566" lon="-8.610795"/>
+      <trkpt lat="41.147199" lon="-8.608788"/>
+      <trkpt lat="41.14782" lon="-8.610183"/>
+      <trkpt lat="41.147847" lon="-8.610453"/>
+      <trkpt lat="41.14782" lon="-8.611614"/>
+      <trkpt lat="41.147388" lon="-8.621019"/>
+      <trkpt lat="41.14755" lon="-8.621667"/>
+      <trkpt lat="41.147586" lon="-8.62191"/>
+      <trkpt lat="41.147604" lon="-8.621955"/>
+    </trkseg>
+  </trk>
+</gpx>

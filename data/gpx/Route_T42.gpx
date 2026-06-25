@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T42</name>
+    <trkseg>
+      <trkpt lat="41.169852" lon="-8.584029"/>
+      <trkpt lat="41.169852" lon="-8.584029"/>
+      <trkpt lat="41.170059" lon="-8.58393"/>
+      <trkpt lat="41.170104" lon="-8.583876"/>
+      <trkpt lat="41.170131" lon="-8.583822"/>
+      <trkpt lat="41.169942" lon="-8.584065"/>
+      <trkpt lat="41.170347" lon="-8.585568"/>
+    </trkseg>
+  </trk>
+</gpx>

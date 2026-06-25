@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T244</name>
+    <trkseg>
+      <trkpt lat="41.177097" lon="-8.682408"/>
+      <trkpt lat="41.177124" lon="-8.682426"/>
+      <trkpt lat="41.17716" lon="-8.681967"/>
+      <trkpt lat="41.177178" lon="-8.681364"/>
+      <trkpt lat="41.177295" lon="-8.679402"/>
+      <trkpt lat="41.177502" lon="-8.676603"/>
+      <trkpt lat="41.178258" lon="-8.675631"/>
+      <trkpt lat="41.179086" lon="-8.675793"/>
+      <trkpt lat="41.179266" lon="-8.673957"/>
+      <trkpt lat="41.179428" lon="-8.670591"/>
+      <trkpt lat="41.180112" lon="-8.667711"/>
+    </trkseg>
+  </trk>
+</gpx>

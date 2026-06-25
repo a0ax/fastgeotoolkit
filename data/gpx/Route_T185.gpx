@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T185</name>
+    <trkseg>
+      <trkpt lat="41.17347" lon="-8.671365"/>
+      <trkpt lat="41.17365" lon="-8.671464"/>
+      <trkpt lat="41.173299" lon="-8.672139"/>
+      <trkpt lat="41.172498" lon="-8.673147"/>
+      <trkpt lat="41.172192" lon="-8.673327"/>
+      <trkpt lat="41.171877" lon="-8.672958"/>
+      <trkpt lat="41.171364" lon="-8.672013"/>
+    </trkseg>
+  </trk>
+</gpx>

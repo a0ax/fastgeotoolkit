@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T164</name>
+    <trkseg>
+      <trkpt lat="41.158881" lon="-8.634987"/>
+      <trkpt lat="41.158683" lon="-8.633988"/>
+      <trkpt lat="41.158404" lon="-8.632143"/>
+      <trkpt lat="41.158305" lon="-8.631711"/>
+      <trkpt lat="41.158233" lon="-8.631405"/>
+    </trkseg>
+  </trk>
+</gpx>

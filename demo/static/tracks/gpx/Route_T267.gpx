@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T267</name>
+    <trkseg>
+      <trkpt lat="41.147343" lon="-8.608185"/>
+      <trkpt lat="41.14728" lon="-8.608212"/>
+      <trkpt lat="41.147325" lon="-8.608401"/>
+      <trkpt lat="41.147487" lon="-8.608617"/>
+      <trkpt lat="41.148171" lon="-8.608203"/>
+      <trkpt lat="41.148918" lon="-8.607582"/>
+      <trkpt lat="41.150016" lon="-8.607141"/>
+      <trkpt lat="41.15088" lon="-8.606655"/>
+      <trkpt lat="41.150997" lon="-8.605368"/>
+      <trkpt lat="41.151006" lon="-8.60382"/>
+      <trkpt lat="41.151051" lon="-8.602542"/>
+      <trkpt lat="41.151042" lon="-8.602416"/>
+      <trkpt lat="41.151033" lon="-8.602389"/>
+      <trkpt lat="41.15106" lon="-8.60229"/>
+      <trkpt lat="41.152311" lon="-8.602326"/>
+    </trkseg>
+  </trk>
+</gpx>

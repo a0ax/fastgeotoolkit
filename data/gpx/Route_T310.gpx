@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T310</name>
+    <trkseg>
+      <trkpt lat="41.157891" lon="-8.668575"/>
+      <trkpt lat="41.157909" lon="-8.668575"/>
+      <trkpt lat="41.158161" lon="-8.667999"/>
+      <trkpt lat="41.158917" lon="-8.666046"/>
+      <trkpt lat="41.158305" lon="-8.665371"/>
+      <trkpt lat="41.157954" lon="-8.665875"/>
+      <trkpt lat="41.156901" lon="-8.668557"/>
+      <trkpt lat="41.155848" lon="-8.671239"/>
+      <trkpt lat="41.155623" lon="-8.672778"/>
+      <trkpt lat="41.154687" lon="-8.673534"/>
+      <trkpt lat="41.153787" lon="-8.675073"/>
+      <trkpt lat="41.154075" lon="-8.676351"/>
+      <trkpt lat="41.154939" lon="-8.677431"/>
+      <trkpt lat="41.155524" lon="-8.678304"/>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T77</name>
+    <trkseg>
+      <trkpt lat="41.145858" lon="-8.612361"/>
+      <trkpt lat="41.146002" lon="-8.611866"/>
+    </trkseg>
+  </trk>
+</gpx>

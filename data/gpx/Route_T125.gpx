@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T125</name>
+    <trkseg>
+      <trkpt lat="41.154354" lon="-8.649081"/>
+      <trkpt lat="41.154327" lon="-8.649081"/>
+      <trkpt lat="41.154255" lon="-8.649162"/>
+      <trkpt lat="41.154255" lon="-8.650044"/>
+      <trkpt lat="41.154138" lon="-8.650197"/>
+      <trkpt lat="41.153904" lon="-8.65035"/>
+      <trkpt lat="41.153877" lon="-8.650368"/>
+      <trkpt lat="41.153814" lon="-8.650314"/>
+      <trkpt lat="41.154354" lon="-8.64918"/>
+      <trkpt lat="41.154408" lon="-8.646579"/>
+      <trkpt lat="41.154201" lon="-8.642889"/>
+    </trkseg>
+  </trk>
+</gpx>

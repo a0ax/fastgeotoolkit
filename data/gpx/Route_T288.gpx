@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T288</name>
+    <trkseg>
+      <trkpt lat="41.157297" lon="-8.594217"/>
+      <trkpt lat="41.154939" lon="-8.595513"/>
+      <trkpt lat="41.15457" lon="-8.595495"/>
+      <trkpt lat="41.15457" lon="-8.595477"/>
+      <trkpt lat="41.154489" lon="-8.595504"/>
+      <trkpt lat="41.153724" lon="-8.59707"/>
+      <trkpt lat="41.15331" lon="-8.599257"/>
+    </trkseg>
+  </trk>
+</gpx>

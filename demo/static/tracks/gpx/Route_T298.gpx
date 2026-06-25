@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T298</name>
+    <trkseg>
+      <trkpt lat="41.175432" lon="-8.627697"/>
+      <trkpt lat="41.174766" lon="-8.627463"/>
+      <trkpt lat="41.173038" lon="-8.626617"/>
+      <trkpt lat="41.170518" lon="-8.625924"/>
+      <trkpt lat="41.168808" lon="-8.625546"/>
+      <trkpt lat="41.167629" lon="-8.625285"/>
+      <trkpt lat="41.167341" lon="-8.625177"/>
+      <trkpt lat="41.167341" lon="-8.625141"/>
+      <trkpt lat="41.167269" lon="-8.625132"/>
+      <trkpt lat="41.166207" lon="-8.624925"/>
+      <trkpt lat="41.164632" lon="-8.624826"/>
+      <trkpt lat="41.163381" lon="-8.624403"/>
+      <trkpt lat="41.162994" lon="-8.622495"/>
+      <trkpt lat="41.162769" lon="-8.62038"/>
+      <trkpt lat="41.162553" lon="-8.617923"/>
+      <trkpt lat="41.162292" lon="-8.615574"/>
+    </trkseg>
+  </trk>
+</gpx>

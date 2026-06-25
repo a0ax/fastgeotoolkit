@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T325</name>
+    <trkseg>
+      <trkpt lat="41.152536" lon="-8.6481"/>
+      <trkpt lat="41.15241" lon="-8.647461"/>
+      <trkpt lat="41.153139" lon="-8.646876"/>
+      <trkpt lat="41.153823" lon="-8.645931"/>
+      <trkpt lat="41.154354" lon="-8.645337"/>
+      <trkpt lat="41.154327" lon="-8.643303"/>
+    </trkseg>
+  </trk>
+</gpx>

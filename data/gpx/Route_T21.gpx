@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T21</name>
+    <trkseg>
+      <trkpt lat="41.14854" lon="-8.585712"/>
+      <trkpt lat="41.148549" lon="-8.585703"/>
+      <trkpt lat="41.148558" lon="-8.585712"/>
+      <trkpt lat="41.148558" lon="-8.585721"/>
+      <trkpt lat="41.148549" lon="-8.585766"/>
+      <trkpt lat="41.148738" lon="-8.585757"/>
+    </trkseg>
+  </trk>
+</gpx>

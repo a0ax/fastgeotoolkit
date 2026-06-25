@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T76</name>
+    <trkseg>
+      <trkpt lat="41.173119" lon="-8.626788"/>
+      <trkpt lat="41.171427" lon="-8.626158"/>
+      <trkpt lat="41.171247" lon="-8.626104"/>
+      <trkpt lat="41.170977" lon="-8.626077"/>
+      <trkpt lat="41.17041" lon="-8.625879"/>
+      <trkpt lat="41.170428" lon="-8.626032"/>
+      <trkpt lat="41.170104" lon="-8.625942"/>
+      <trkpt lat="41.169645" lon="-8.625753"/>
+      <trkpt lat="41.169636" lon="-8.625636"/>
+      <trkpt lat="41.169492" lon="-8.625618"/>
+      <trkpt lat="41.16942" lon="-8.625627"/>
+    </trkseg>
+  </trk>
+</gpx>

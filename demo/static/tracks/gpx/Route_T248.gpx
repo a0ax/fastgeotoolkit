@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T248</name>
+    <trkseg>
+      <trkpt lat="41.147208" lon="-8.616429"/>
+      <trkpt lat="41.147235" lon="-8.617527"/>
+      <trkpt lat="41.147253" lon="-8.617563"/>
+      <trkpt lat="41.147487" lon="-8.617914"/>
+      <trkpt lat="41.14854" lon="-8.618508"/>
+      <trkpt lat="41.147964" lon="-8.619741"/>
+      <trkpt lat="41.147406" lon="-8.62128"/>
+      <trkpt lat="41.148126" lon="-8.623827"/>
+      <trkpt lat="41.149368" lon="-8.625609"/>
+      <trkpt lat="41.151897" lon="-8.625942"/>
+      <trkpt lat="41.15205" lon="-8.625951"/>
+      <trkpt lat="41.152608" lon="-8.626194"/>
+      <trkpt lat="41.152491" lon="-8.628318"/>
+      <trkpt lat="41.152662" lon="-8.631297"/>
+      <trkpt lat="41.152518" lon="-8.634195"/>
+      <trkpt lat="41.152716" lon="-8.637111"/>
+      <trkpt lat="41.153355" lon="-8.639784"/>
+      <trkpt lat="41.154237" lon="-8.642934"/>
+      <trkpt lat="41.15439" lon="-8.64567"/>
+    </trkseg>
+  </trk>
+</gpx>

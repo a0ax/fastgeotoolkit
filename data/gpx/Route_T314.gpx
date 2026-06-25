@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T314</name>
+    <trkseg>
+      <trkpt lat="41.161905" lon="-8.619723"/>
+      <trkpt lat="41.161959" lon="-8.619768"/>
+      <trkpt lat="41.161995" lon="-8.619813"/>
+      <trkpt lat="41.162004" lon="-8.619822"/>
+      <trkpt lat="41.162256" lon="-8.619183"/>
+      <trkpt lat="41.162481" lon="-8.617842"/>
+      <trkpt lat="41.162382" lon="-8.61669"/>
+      <trkpt lat="41.162337" lon="-8.616339"/>
+      <trkpt lat="41.162067" lon="-8.614188"/>
+      <trkpt lat="41.161824" lon="-8.612244"/>
+      <trkpt lat="41.161734" lon="-8.611497"/>
+      <trkpt lat="41.161743" lon="-8.611506"/>
+      <trkpt lat="41.161743" lon="-8.611497"/>
+      <trkpt lat="41.161644" lon="-8.610714"/>
+      <trkpt lat="41.16123" lon="-8.608455"/>
+      <trkpt lat="41.160789" lon="-8.606142"/>
+      <trkpt lat="41.160195" lon="-8.605386"/>
+      <trkpt lat="41.159133" lon="-8.605935"/>
+      <trkpt lat="41.158827" lon="-8.60454"/>
+      <trkpt lat="41.159493" lon="-8.604423"/>
+    </trkseg>
+  </trk>
+</gpx>

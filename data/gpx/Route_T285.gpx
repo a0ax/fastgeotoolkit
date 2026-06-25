@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T285</name>
+    <trkseg>
+      <trkpt lat="41.177367" lon="-8.609409"/>
+      <trkpt lat="41.177097" lon="-8.608455"/>
+      <trkpt lat="41.177493" lon="-8.607285"/>
+      <trkpt lat="41.178222" lon="-8.605971"/>
+      <trkpt lat="41.176836" lon="-8.60409"/>
+      <trkpt lat="41.176728" lon="-8.602677"/>
+    </trkseg>
+  </trk>
+</gpx>

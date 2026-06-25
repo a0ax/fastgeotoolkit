@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T209</name>
+    <trkseg>
+      <trkpt lat="41.159961" lon="-8.630739"/>
+      <trkpt lat="41.15898" lon="-8.630064"/>
+      <trkpt lat="41.158674" lon="-8.629893"/>
+      <trkpt lat="41.158566" lon="-8.63001"/>
+      <trkpt lat="41.157774" lon="-8.630352"/>
+      <trkpt lat="41.157297" lon="-8.630118"/>
+      <trkpt lat="41.157072" lon="-8.629839"/>
+      <trkpt lat="41.156316" lon="-8.629569"/>
+      <trkpt lat="41.155092" lon="-8.630343"/>
+    </trkseg>
+  </trk>
+</gpx>

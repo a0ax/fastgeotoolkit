@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T61</name>
+    <trkseg>
+      <trkpt lat="41.148495" lon="-8.585748"/>
+      <trkpt lat="41.148594" lon="-8.585748"/>
+      <trkpt lat="41.148774" lon="-8.585766"/>
+      <trkpt lat="41.148882" lon="-8.585694"/>
+      <trkpt lat="41.148954" lon="-8.585766"/>
+      <trkpt lat="41.148963" lon="-8.585883"/>
+      <trkpt lat="41.149008" lon="-8.586405"/>
+      <trkpt lat="41.149296" lon="-8.587791"/>
+      <trkpt lat="41.149773" lon="-8.589546"/>
+      <trkpt lat="41.150286" lon="-8.591427"/>
+      <trkpt lat="41.150466" lon="-8.592075"/>
+      <trkpt lat="41.150673" lon="-8.59284"/>
+      <trkpt lat="41.150925" lon="-8.594019"/>
+      <trkpt lat="41.150142" lon="-8.595531"/>
+      <trkpt lat="41.149818" lon="-8.596098"/>
+      <trkpt lat="41.148945" lon="-8.597484"/>
+    </trkseg>
+  </trk>
+</gpx>

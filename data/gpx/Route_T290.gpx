@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T290</name>
+    <trkseg>
+      <trkpt lat="41.148486" lon="-8.614368"/>
+      <trkpt lat="41.148486" lon="-8.614422"/>
+      <trkpt lat="41.148459" lon="-8.614404"/>
+      <trkpt lat="41.148459" lon="-8.614377"/>
+      <trkpt lat="41.148441" lon="-8.614341"/>
+      <trkpt lat="41.148045" lon="-8.614458"/>
+      <trkpt lat="41.147991" lon="-8.614971"/>
+      <trkpt lat="41.148117" lon="-8.615664"/>
+      <trkpt lat="41.148945" lon="-8.615124"/>
+      <trkpt lat="41.149944" lon="-8.614764"/>
+      <trkpt lat="41.151195" lon="-8.614656"/>
+      <trkpt lat="41.15178" lon="-8.613927"/>
+      <trkpt lat="41.15232" lon="-8.613738"/>
+      <trkpt lat="41.152779" lon="-8.613594"/>
+      <trkpt lat="41.153652" lon="-8.613405"/>
+      <trkpt lat="41.153715" lon="-8.613288"/>
+      <trkpt lat="41.153598" lon="-8.61165"/>
+      <trkpt lat="41.153544" lon="-8.609175"/>
+      <trkpt lat="41.153436" lon="-8.606898"/>
+      <trkpt lat="41.153427" lon="-8.60652"/>
+      <trkpt lat="41.153157" lon="-8.60616"/>
+      <trkpt lat="41.152203" lon="-8.606844"/>
+      <trkpt lat="41.15106" lon="-8.607177"/>
+    </trkseg>
+  </trk>
+</gpx>

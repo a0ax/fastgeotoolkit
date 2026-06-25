@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T45</name>
+    <trkseg>
+      <trkpt lat="41.152005" lon="-8.627193"/>
+      <trkpt lat="41.152014" lon="-8.627202"/>
+      <trkpt lat="41.152221" lon="-8.626401"/>
+      <trkpt lat="41.15142" lon="-8.625852"/>
+      <trkpt lat="41.150727" lon="-8.625969"/>
+      <trkpt lat="41.150574" lon="-8.625942"/>
+      <trkpt lat="41.149152" lon="-8.625618"/>
+      <trkpt lat="41.148909" lon="-8.625591"/>
+      <trkpt lat="41.1489" lon="-8.6256"/>
+      <trkpt lat="41.148333" lon="-8.624916"/>
+      <trkpt lat="41.147739" lon="-8.623026"/>
+      <trkpt lat="41.147595" lon="-8.622297"/>
+      <trkpt lat="41.147271" lon="-8.620542"/>
+      <trkpt lat="41.146416" lon="-8.620236"/>
+      <trkpt lat="41.146155" lon="-8.619282"/>
+      <trkpt lat="41.14629" lon="-8.61768"/>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T251</name>
+    <trkseg>
+      <trkpt lat="41.175432" lon="-8.599887"/>
+      <trkpt lat="41.175432" lon="-8.600067"/>
+      <trkpt lat="41.175279" lon="-8.600094"/>
+      <trkpt lat="41.174172" lon="-8.60049"/>
+      <trkpt lat="41.173731" lon="-8.603145"/>
+      <trkpt lat="41.173722" lon="-8.605647"/>
+    </trkseg>
+  </trk>
+</gpx>

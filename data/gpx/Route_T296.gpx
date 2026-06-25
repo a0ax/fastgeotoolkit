@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T296</name>
+    <trkseg>
+      <trkpt lat="41.147946" lon="-8.612298"/>
+      <trkpt lat="41.147937" lon="-8.612334"/>
+      <trkpt lat="41.147955" lon="-8.612271"/>
+      <trkpt lat="41.147991" lon="-8.612253"/>
+      <trkpt lat="41.147946" lon="-8.612334"/>
+      <trkpt lat="41.147496" lon="-8.621343"/>
+      <trkpt lat="41.147865" lon="-8.623071"/>
+      <trkpt lat="41.148495" lon="-8.62506"/>
+      <trkpt lat="41.149809" lon="-8.625663"/>
+      <trkpt lat="41.151789" lon="-8.625996"/>
+      <trkpt lat="41.152005" lon="-8.626023"/>
+      <trkpt lat="41.152563" lon="-8.626185"/>
+      <trkpt lat="41.152464" lon="-8.627643"/>
+      <trkpt lat="41.15259" lon="-8.630712"/>
+      <trkpt lat="41.151843" lon="-8.633016"/>
+      <trkpt lat="41.151114" lon="-8.635707"/>
+      <trkpt lat="41.151258" lon="-8.639217"/>
+      <trkpt lat="41.151366" lon="-8.640423"/>
+      <trkpt lat="41.151564" lon="-8.642007"/>
+    </trkseg>
+  </trk>
+</gpx>

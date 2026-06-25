@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T4</name>
+    <trkseg>
+      <trkpt lat="41.141169" lon="-8.613963"/>
+      <trkpt lat="41.141124" lon="-8.614125"/>
+      <trkpt lat="41.140926" lon="-8.615088"/>
+      <trkpt lat="41.140818" lon="-8.615277"/>
+      <trkpt lat="41.140809" lon="-8.615259"/>
+      <trkpt lat="41.1408" lon="-8.615241"/>
+      <trkpt lat="41.140818" lon="-8.615052"/>
+      <trkpt lat="41.14098" lon="-8.614638"/>
+    </trkseg>
+  </trk>
+</gpx>

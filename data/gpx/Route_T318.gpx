@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T318</name>
+    <trkseg>
+      <trkpt lat="41.168169" lon="-8.689293"/>
+      <trkpt lat="41.16816" lon="-8.689302"/>
+      <trkpt lat="41.167386" lon="-8.688735"/>
+      <trkpt lat="41.166279" lon="-8.687655"/>
+      <trkpt lat="41.164605" lon="-8.686665"/>
+      <trkpt lat="41.162337" lon="-8.685396"/>
+      <trkpt lat="41.160024" lon="-8.684136"/>
+      <trkpt lat="41.159196" lon="-8.683641"/>
+      <trkpt lat="41.159205" lon="-8.68365"/>
+      <trkpt lat="41.158098" lon="-8.682714"/>
+      <trkpt lat="41.157207" lon="-8.681976"/>
+      <trkpt lat="41.156442" lon="-8.68131"/>
+      <trkpt lat="41.155911" lon="-8.68086"/>
+      <trkpt lat="41.155506" lon="-8.680518"/>
+      <trkpt lat="41.153832" lon="-8.679141"/>
+      <trkpt lat="41.152437" lon="-8.67825"/>
+      <trkpt lat="41.152077" lon="-8.677998"/>
+      <trkpt lat="41.151699" lon="-8.677782"/>
+      <trkpt lat="41.15151" lon="-8.677728"/>
+    </trkseg>
+  </trk>
+</gpx>

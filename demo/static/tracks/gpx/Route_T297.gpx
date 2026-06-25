@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T297</name>
+    <trkseg>
+      <trkpt lat="41.147667" lon="-8.609967"/>
+      <trkpt lat="41.147703" lon="-8.61003"/>
+      <trkpt lat="41.147793" lon="-8.610471"/>
+      <trkpt lat="41.147847" lon="-8.610714"/>
+      <trkpt lat="41.147919" lon="-8.610858"/>
+      <trkpt lat="41.148972" lon="-8.610579"/>
+      <trkpt lat="41.149035" lon="-8.610516"/>
+      <trkpt lat="41.150259" lon="-8.610264"/>
+      <trkpt lat="41.1516" lon="-8.609517"/>
+      <trkpt lat="41.15286" lon="-8.609958"/>
+      <trkpt lat="41.154291" lon="-8.609742"/>
+      <trkpt lat="41.156001" lon="-8.609238"/>
+      <trkpt lat="41.157414" lon="-8.609139"/>
+      <trkpt lat="41.158926" lon="-8.608464"/>
+      <trkpt lat="41.160672" lon="-8.607636"/>
+      <trkpt lat="41.163912" lon="-8.606286"/>
+      <trkpt lat="41.16501" lon="-8.606223"/>
+      <trkpt lat="41.165451" lon="-8.606187"/>
+    </trkseg>
+  </trk>
+</gpx>

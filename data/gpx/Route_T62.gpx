@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T62</name>
+    <trkseg>
+      <trkpt lat="41.142708" lon="-8.574696"/>
+      <trkpt lat="41.142888" lon="-8.574669"/>
+      <trkpt lat="41.142951" lon="-8.575254"/>
+      <trkpt lat="41.143275" lon="-8.575857"/>
+      <trkpt lat="41.143887" lon="-8.575308"/>
+      <trkpt lat="41.14395" lon="-8.573616"/>
+      <trkpt lat="41.144067" lon="-8.574363"/>
+      <trkpt lat="41.144364" lon="-8.576559"/>
+      <trkpt lat="41.144652" lon="-8.578071"/>
+      <trkpt lat="41.143905" lon="-8.579961"/>
+    </trkseg>
+  </trk>
+</gpx>

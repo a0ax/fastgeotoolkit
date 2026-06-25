@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T273</name>
+    <trkseg>
+      <trkpt lat="41.145966" lon="-8.612613"/>
+      <trkpt lat="41.145957" lon="-8.61255"/>
+      <trkpt lat="41.145948" lon="-8.612181"/>
+      <trkpt lat="41.146245" lon="-8.611254"/>
+      <trkpt lat="41.147442" lon="-8.611011"/>
+      <trkpt lat="41.147649" lon="-8.611029"/>
+      <trkpt lat="41.147757" lon="-8.610966"/>
+      <trkpt lat="41.148963" lon="-8.61057"/>
+      <trkpt lat="41.150682" lon="-8.610219"/>
+      <trkpt lat="41.150772" lon="-8.610111"/>
+      <trkpt lat="41.150772" lon="-8.610075"/>
+      <trkpt lat="41.150772" lon="-8.610003"/>
+      <trkpt lat="41.151141" lon="-8.609625"/>
+      <trkpt lat="41.152293" lon="-8.609931"/>
+      <trkpt lat="41.153841" lon="-8.60994"/>
+      <trkpt lat="41.153913" lon="-8.609985"/>
+      <trkpt lat="41.153859" lon="-8.610021"/>
+      <trkpt lat="41.153859" lon="-8.610057"/>
+      <trkpt lat="41.153895" lon="-8.610084"/>
+    </trkseg>
+  </trk>
+</gpx>

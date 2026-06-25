@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T1</name>
+    <trkseg>
+      <trkpt lat="41.148522" lon="-8.585676"/>
+      <trkpt lat="41.148639" lon="-8.585712"/>
+      <trkpt lat="41.148855" lon="-8.585685"/>
+      <trkpt lat="41.148927" lon="-8.58573"/>
+      <trkpt lat="41.148963" lon="-8.585982"/>
+      <trkpt lat="41.148954" lon="-8.586396"/>
+      <trkpt lat="41.14872" lon="-8.586072"/>
+      <trkpt lat="41.147847" lon="-8.586324"/>
+      <trkpt lat="41.14746" lon="-8.586999"/>
+      <trkpt lat="41.147154" lon="-8.586576"/>
+      <trkpt lat="41.146623" lon="-8.584884"/>
+    </trkseg>
+  </trk>
+</gpx>

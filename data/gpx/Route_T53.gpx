@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T53</name>
+    <trkseg>
+      <trkpt lat="41.151339" lon="-8.609688"/>
+      <trkpt lat="41.151339" lon="-8.609697"/>
+      <trkpt lat="41.151348" lon="-8.609652"/>
+      <trkpt lat="41.151447" lon="-8.609544"/>
+      <trkpt lat="41.152023" lon="-8.609976"/>
+      <trkpt lat="41.153166" lon="-8.610003"/>
+      <trkpt lat="41.153976" lon="-8.609949"/>
+      <trkpt lat="41.155524" lon="-8.609256"/>
+      <trkpt lat="41.156523" lon="-8.609229"/>
+      <trkpt lat="41.157405" lon="-8.608995"/>
+      <trkpt lat="41.157603" lon="-8.607483"/>
+      <trkpt lat="41.158548" lon="-8.606601"/>
+      <trkpt lat="41.159025" lon="-8.605611"/>
+      <trkpt lat="41.158845" lon="-8.604549"/>
+      <trkpt lat="41.159961" lon="-8.604531"/>
+      <trkpt lat="41.160096" lon="-8.603433"/>
+      <trkpt lat="41.159583" lon="-8.601552"/>
+      <trkpt lat="41.15898" lon="-8.599293"/>
+      <trkpt lat="41.15889" lon="-8.598924"/>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T212</name>
+    <trkseg>
+      <trkpt lat="41.152932" lon="-8.562753"/>
+      <trkpt lat="41.152338" lon="-8.563599"/>
+      <trkpt lat="41.152743" lon="-8.564895"/>
+      <trkpt lat="41.152257" lon="-8.565462"/>
+      <trkpt lat="41.15151" lon="-8.566758"/>
+      <trkpt lat="41.1516" lon="-8.568423"/>
+      <trkpt lat="41.151807" lon="-8.570394"/>
+      <trkpt lat="41.151816" lon="-8.571951"/>
+      <trkpt lat="41.15187" lon="-8.573697"/>
+      <trkpt lat="41.152077" lon="-8.574336"/>
+      <trkpt lat="41.150961" lon="-8.575191"/>
+      <trkpt lat="41.150322" lon="-8.576937"/>
+      <trkpt lat="41.149278" lon="-8.578314"/>
+    </trkseg>
+  </trk>
+</gpx>

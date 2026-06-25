@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T264</name>
+    <trkseg>
+      <trkpt lat="41.14728" lon="-8.607987"/>
+      <trkpt lat="41.147262" lon="-8.607978"/>
+      <trkpt lat="41.147469" lon="-8.6085"/>
+      <trkpt lat="41.148189" lon="-8.608194"/>
+      <trkpt lat="41.148558" lon="-8.607303"/>
+      <trkpt lat="41.148387" lon="-8.606466"/>
+      <trkpt lat="41.14836" lon="-8.606349"/>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T177</name>
+    <trkseg>
+      <trkpt lat="41.148036" lon="-8.619867"/>
+      <trkpt lat="41.148036" lon="-8.619885"/>
+      <trkpt lat="41.147676" lon="-8.620218"/>
+      <trkpt lat="41.147505" lon="-8.621433"/>
+      <trkpt lat="41.147505" lon="-8.621559"/>
+      <trkpt lat="41.147505" lon="-8.621577"/>
+      <trkpt lat="41.147631" lon="-8.622081"/>
+      <trkpt lat="41.147901" lon="-8.623062"/>
+    </trkseg>
+  </trk>
+</gpx>

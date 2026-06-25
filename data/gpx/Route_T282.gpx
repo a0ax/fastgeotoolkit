@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T282</name>
+    <trkseg>
+      <trkpt lat="41.148108" lon="-8.612271"/>
+      <trkpt lat="41.148243" lon="-8.612892"/>
+      <trkpt lat="41.148342" lon="-8.613666"/>
+      <trkpt lat="41.147946" lon="-8.614233"/>
+      <trkpt lat="41.147775" lon="-8.614161"/>
+      <trkpt lat="41.14764" lon="-8.61381"/>
+      <trkpt lat="41.14755" lon="-8.613522"/>
+      <trkpt lat="41.14602" lon="-8.613333"/>
+      <trkpt lat="41.145993" lon="-8.61354"/>
+      <trkpt lat="41.145957" lon="-8.613603"/>
+      <trkpt lat="41.145858" lon="-8.613594"/>
+      <trkpt lat="41.145966" lon="-8.612559"/>
+      <trkpt lat="41.145948" lon="-8.61246"/>
+      <trkpt lat="41.145939" lon="-8.612451"/>
+      <trkpt lat="41.145948" lon="-8.612397"/>
+      <trkpt lat="41.146173" lon="-8.611083"/>
+      <trkpt lat="41.145381" lon="-8.610948"/>
+    </trkseg>
+  </trk>
+</gpx>

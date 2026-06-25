@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T258</name>
+    <trkseg>
+      <trkpt lat="41.150304" lon="-8.607132"/>
+      <trkpt lat="41.150268" lon="-8.607195"/>
+      <trkpt lat="41.150178" lon="-8.607204"/>
+      <trkpt lat="41.14917" lon="-8.6076"/>
+      <trkpt lat="41.148999" lon="-8.607717"/>
+    </trkseg>
+  </trk>
+</gpx>

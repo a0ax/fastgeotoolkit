@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T289</name>
+    <trkseg>
+      <trkpt lat="41.174406" lon="-8.648838"/>
+      <trkpt lat="41.174262" lon="-8.648604"/>
+      <trkpt lat="41.173452" lon="-8.647641"/>
+    </trkseg>
+  </trk>
+</gpx>

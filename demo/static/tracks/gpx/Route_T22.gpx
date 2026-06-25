@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T22</name>
+    <trkseg>
+      <trkpt lat="41.137722" lon="-8.612757"/>
+      <trkpt lat="41.137785" lon="-8.612658"/>
+      <trkpt lat="41.137812" lon="-8.612631"/>
+      <trkpt lat="41.137866" lon="-8.61246"/>
+      <trkpt lat="41.138073" lon="-8.611506"/>
+      <trkpt lat="41.138523" lon="-8.610273"/>
+      <trkpt lat="41.138874" lon="-8.609697"/>
+      <trkpt lat="41.13891" lon="-8.609625"/>
+      <trkpt lat="41.138964" lon="-8.609472"/>
+      <trkpt lat="41.138397" lon="-8.61003"/>
+      <trkpt lat="41.138055" lon="-8.610246"/>
+      <trkpt lat="41.13711" lon="-8.611146"/>
+      <trkpt lat="41.135634" lon="-8.61156"/>
+    </trkseg>
+  </trk>
+</gpx>

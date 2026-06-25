@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T160</name>
+    <trkseg>
+      <trkpt lat="41.171832" lon="-8.649279"/>
+      <trkpt lat="41.17203" lon="-8.649576"/>
+      <trkpt lat="41.172858" lon="-8.650602"/>
+      <trkpt lat="41.173641" lon="-8.651574"/>
+      <trkpt lat="41.173785" lon="-8.65287"/>
+      <trkpt lat="41.173668" lon="-8.653428"/>
+      <trkpt lat="41.173803" lon="-8.653608"/>
+      <trkpt lat="41.173839" lon="-8.653635"/>
+      <trkpt lat="41.173911" lon="-8.653725"/>
+      <trkpt lat="41.174001" lon="-8.653842"/>
+      <trkpt lat="41.174055" lon="-8.653932"/>
+    </trkseg>
+  </trk>
+</gpx>

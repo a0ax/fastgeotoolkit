@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T278</name>
+    <trkseg>
+      <trkpt lat="41.146884" lon="-8.606385"/>
+      <trkpt lat="41.14728" lon="-8.607681"/>
+      <trkpt lat="41.147307" lon="-8.608212"/>
+      <trkpt lat="41.147631" lon="-8.609823"/>
+      <trkpt lat="41.147865" lon="-8.610642"/>
+      <trkpt lat="41.147829" lon="-8.611056"/>
+      <trkpt lat="41.147703" lon="-8.611965"/>
+      <trkpt lat="41.147658" lon="-8.622225"/>
+      <trkpt lat="41.147811" lon="-8.622864"/>
+      <trkpt lat="41.148531" lon="-8.625042"/>
+      <trkpt lat="41.150052" lon="-8.625807"/>
+      <trkpt lat="41.15241" lon="-8.626176"/>
+      <trkpt lat="41.152383" lon="-8.628273"/>
+      <trkpt lat="41.152662" lon="-8.631963"/>
+      <trkpt lat="41.152401" lon="-8.635365"/>
+      <trkpt lat="41.153004" lon="-8.638416"/>
+      <trkpt lat="41.153625" lon="-8.6409"/>
+      <trkpt lat="41.154498" lon="-8.643825"/>
+      <trkpt lat="41.154237" lon="-8.647344"/>
+      <trkpt lat="41.15403" lon="-8.650161"/>
+      <trkpt lat="41.152329" lon="-8.652168"/>
+      <trkpt lat="41.151888" lon="-8.655723"/>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T303</name>
+    <trkseg>
+      <trkpt lat="41.172849" lon="-8.612136"/>
+      <trkpt lat="41.172804" lon="-8.612667"/>
+      <trkpt lat="41.172084" lon="-8.612685"/>
+    </trkseg>
+  </trk>
+</gpx>

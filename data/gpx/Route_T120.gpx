@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T120</name>
+    <trkseg>
+      <trkpt lat="41.159664" lon="-8.63163"/>
+      <trkpt lat="41.160105" lon="-8.632233"/>
+      <trkpt lat="41.161293" lon="-8.632683"/>
+      <trkpt lat="41.162229" lon="-8.634024"/>
+      <trkpt lat="41.162922" lon="-8.634996"/>
+      <trkpt lat="41.163291" lon="-8.636256"/>
+      <trkpt lat="41.163885" lon="-8.637003"/>
+      <trkpt lat="41.164677" lon="-8.637858"/>
+      <trkpt lat="41.164947" lon="-8.638866"/>
+      <trkpt lat="41.165397" lon="-8.639658"/>
+      <trkpt lat="41.166504" lon="-8.640819"/>
+      <trkpt lat="41.168574" lon="-8.639946"/>
+      <trkpt lat="41.169834" lon="-8.638263"/>
+      <trkpt lat="41.171049" lon="-8.635779"/>
+      <trkpt lat="41.171679" lon="-8.633052"/>
+      <trkpt lat="41.172318" lon="-8.63001"/>
+      <trkpt lat="41.172831" lon="-8.626959"/>
+      <trkpt lat="41.172534" lon="-8.623791"/>
+      <trkpt lat="41.172921" lon="-8.621964"/>
+      <trkpt lat="41.175675" lon="-8.622378"/>
+      <trkpt lat="41.179221" lon="-8.622243"/>
+    </trkseg>
+  </trk>
+</gpx>

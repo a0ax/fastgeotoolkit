@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T23</name>
+    <trkseg>
+      <trkpt lat="41.151294" lon="-8.625816"/>
+      <trkpt lat="41.15133" lon="-8.625942"/>
+      <trkpt lat="41.151294" lon="-8.626113"/>
+      <trkpt lat="41.151222" lon="-8.626284"/>
+      <trkpt lat="41.151249" lon="-8.626248"/>
+      <trkpt lat="41.151276" lon="-8.626158"/>
+      <trkpt lat="41.151285" lon="-8.626167"/>
+      <trkpt lat="41.151276" lon="-8.626194"/>
+      <trkpt lat="41.151537" lon="-8.626311"/>
+      <trkpt lat="41.152959" lon="-8.6265"/>
+      <trkpt lat="41.154228" lon="-8.626653"/>
+      <trkpt lat="41.154255" lon="-8.626608"/>
+      <trkpt lat="41.1543" lon="-8.626608"/>
+      <trkpt lat="41.15439" lon="-8.626626"/>
+      <trkpt lat="41.155128" lon="-8.626905"/>
+      <trkpt lat="41.155686" lon="-8.627301"/>
+      <trkpt lat="41.156559" lon="-8.628597"/>
+      <trkpt lat="41.15664" lon="-8.628768"/>
+    </trkseg>
+  </trk>
+</gpx>

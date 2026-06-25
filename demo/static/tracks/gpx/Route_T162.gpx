@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T162</name>
+    <trkseg>
+      <trkpt lat="41.16438" lon="-8.632323"/>
+      <trkpt lat="41.164389" lon="-8.632323"/>
+      <trkpt lat="41.164335" lon="-8.632368"/>
+      <trkpt lat="41.164362" lon="-8.632368"/>
+      <trkpt lat="41.16438" lon="-8.632368"/>
+      <trkpt lat="41.164326" lon="-8.632386"/>
+      <trkpt lat="41.16375" lon="-8.633412"/>
+      <trkpt lat="41.163282" lon="-8.633493"/>
+      <trkpt lat="41.162481" lon="-8.632854"/>
+      <trkpt lat="41.16231" lon="-8.631891"/>
+      <trkpt lat="41.163156" lon="-8.630064"/>
+      <trkpt lat="41.163579" lon="-8.628615"/>
+      <trkpt lat="41.163543" lon="-8.627958"/>
+      <trkpt lat="41.163453" lon="-8.62641"/>
+      <trkpt lat="41.163417" lon="-8.625483"/>
+      <trkpt lat="41.163399" lon="-8.625474"/>
+      <trkpt lat="41.163372" lon="-8.625483"/>
+      <trkpt lat="41.163381" lon="-8.625474"/>
+      <trkpt lat="41.163354" lon="-8.625042"/>
+    </trkseg>
+  </trk>
+</gpx>

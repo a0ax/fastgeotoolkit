@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T25</name>
+    <trkseg>
+      <trkpt lat="41.154867" lon="-8.630667"/>
+      <trkpt lat="41.15466" lon="-8.630928"/>
+      <trkpt lat="41.153166" lon="-8.632386"/>
+      <trkpt lat="41.151528" lon="-8.633241"/>
+      <trkpt lat="41.150943" lon="-8.636139"/>
+      <trkpt lat="41.14962" lon="-8.639496"/>
+      <trkpt lat="41.149413" lon="-8.642646"/>
+      <trkpt lat="41.151141" lon="-8.644698"/>
+      <trkpt lat="41.15169" lon="-8.642727"/>
+      <trkpt lat="41.150142" lon="-8.641116"/>
+    </trkseg>
+  </trk>
+</gpx>

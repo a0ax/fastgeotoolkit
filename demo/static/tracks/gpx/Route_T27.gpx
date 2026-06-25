@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T27</name>
+    <trkseg>
+      <trkpt lat="41.160735" lon="-8.59212"/>
+      <trkpt lat="41.161689" lon="-8.591499"/>
+      <trkpt lat="41.161581" lon="-8.592093"/>
+      <trkpt lat="41.162517" lon="-8.593029"/>
+      <trkpt lat="41.162679" lon="-8.593488"/>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T204</name>
+    <trkseg>
+      <trkpt lat="41.155218" lon="-8.610633"/>
+      <trkpt lat="41.155272" lon="-8.611776"/>
+      <trkpt lat="41.155272" lon="-8.611803"/>
+      <trkpt lat="41.155443" lon="-8.611911"/>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://topografix.com" version="1.1" creator="Python CSV to GPX">
+  <trk>
+    <name>Route T283</name>
+    <trkseg>
+      <trkpt lat="41.14944" lon="-8.610921"/>
+      <trkpt lat="41.149296" lon="-8.610957"/>
+      <trkpt lat="41.149152" lon="-8.610543"/>
+      <trkpt lat="41.149026" lon="-8.61075"/>
+      <trkpt lat="41.148963" lon="-8.610795"/>
+      <trkpt lat="41.149035" lon="-8.609283"/>
+      <trkpt lat="41.148711" lon="-8.608023"/>
+      <trkpt lat="41.148756" lon="-8.607888"/>
+      <trkpt lat="41.148351" lon="-8.606547"/>
+      <trkpt lat="41.147784" lon="-8.604486"/>
+      <trkpt lat="41.147289" lon="-8.60247"/>
+      <trkpt lat="41.147181" lon="-8.602137"/>
+    </trkseg>
+  </trk>
+</gpx>
