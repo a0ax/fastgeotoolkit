@@ -430,7 +430,7 @@
 
       // Load files 1 through 29.fit from static/tracks
       const filePromises = [];
-      for (let i = 1; i <= 29; i++) {
+      for (let i = 1; i <= 327; i++) {
         filePromises.push(
           fetch(`/tracks/gpx/Route_T${i}.gpx`)
             .then(response => {
