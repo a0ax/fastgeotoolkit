@@ -82,6 +82,3 @@ Limited use of generative AI tools was employed in the preparation of this work.
 The authors thank the open‑source geospatial community, including contributors to Turf.js and MaplibreJS, for feedback and contributions during development.
 
 # References
-
-[^1]: fastgeotoolkit npm package: https://www.npmjs.com/package/fastgeotoolkit  
-[^2]: Source code repository: https://github.com/username/fastgeotoolkit (replace with actual URL)
