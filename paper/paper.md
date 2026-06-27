@@ -7,7 +7,10 @@ tags:
   - WebAssembly
 authors:
   - name: Alexander Akira Weimer
-    orcid: 0009-0008-5679-3042
+    orcid: 0009-0009-7313-138X
+    affiliation: 1
+  - name: Maria Clara De Souza
+    orcid: 0009-0005-6956-364X
     affiliation: 1
   - name: Justin Abraham
     orcid: 0009-0009-1472-0408
@@ -16,81 +19,65 @@ affiliations:
  - name: University of Minnesota
    index: 1
    ror: 017zqws13
-date: 20 August 2025
+date: 26 June 2026
 bibliography: paper.bib
-
 ---
 
 # Summary
 
-fastgeotoolkit is a high-performance JavaScript library that introduces a novel segment-based approach to GPS trajectory analysis and route density visualization. 
+fastgeotoolkit is a high‑performance JavaScript library for GPS trajectory analysis and route density visualisation. It introduces a novel segment‑based algorithm that treats GPS tracks as sequences of connected line segments rather than as disconnected point clouds. By counting overlaps at the segment level, the library produces density maps that accurately reflect actual route usage, independent of GPS sampling rates or device noise. The tool runs natively in web browsers via WebAssembly, requires no server infrastructure, and integrates seamlessly with popular mapping libraries such as Leaflet and MapLibre GL JS. fastgeotoolkit makes advanced geospatial analysis accessible to researchers, urban planners, ecologists, and citizen scientists who need fast, reproducible, and browser‑based route analysis without complex preprocessing or proprietary software.
 
-This library addresses several key limitations of existing approaches to route density visualization, leveraging a segment-based algorithm that processes GPS trajectories as sequences of connected line segments. By analyzing route overlap at the segment level, fastgeotoolkit produces density visualizations that better reflect route usage patterns.
+# Statement of need
 
-The implementation is able to run on the web or locally, and handles heavy datasets well. As a result, it is a tool accessible for both research and consumer-facing development applications.
+Accurate mapping of route usage is fundamental to transportation research, trail management, urban planning, and movement ecology. Researchers need to quantify how often different paths are used, identify congestion points, and evaluate infrastructure impacts. However, existing tools and methods suffer from three critical limitations:
 
-# Statement of Need
+1. **Sampling bias** – GPS devices record positions at varying rates; point‑based methods (kernel density estimation, clustering) amplify these inconsistencies, making cross‑dataset comparisons unreliable.
+2. **Parameter sensitivity** – Kernel bandwidth, grid size, and other parameters greatly influence results, hindering reproducibility and standardisation.
+3. **Proprietary barriers** – Commercial platforms like Strava employ segment‑based algorithms internally but keep their implementations closed, preventing open science and independent verification.
 
-GPS route density visualization is essential for transportation research [@TransportationResearch], urban planning [@UrbanPlanning], trail management [@TrailManagement], and movement ecology [@MovementEcology]. Accurate route usage quantification supports evidence-based infrastructure decisions and mobility behavior analysis.
+fastgeotoolkit directly addresses these problems by providing the first open‑source, segment‑based route density implementation. Its algorithm normalises spatial coordinates to a tolerance grid, converts each segment to a hashable key, and counts occurrences across all tracks. This approach eliminates sampling‑rate artefacts and removes the need for arbitrary kernel parameters. The target audience includes researchers in environmental informatics, transportation science, ecology, and anyone analysing human or animal movement patterns. The library lowers the barrier to high‑quality route analysis by enabling browser‑native workflows with minimal dependencies.
 
-## Research Gap in Route-Based Analysis
+# State of the field
 
-Current geospatial analysis treats GPS trajectories as point collections, applying kernel density estimation or clustering algorithms [@Xu2024Dec]. This introduces several problems when dealing with data where the linear route is the primary feature.
+Existing geospatial software falls into three categories:
 
-**Sampling bias amplification**: GPS sampling rates vary by device settings and signal conditions [@Muller2022Apr]. Point-based methods make these inconsistencies worse, preventing accurate route comparison across datasets [@Xu2024Dec].
+- **General‑purpose GIS** (QGIS, ArcGIS) and **statistical environments** (R `sf`, `sp`, Python `scipy`) offer kernel density and clustering tools, but treat GPS points independently and do not exploit the linear structure of routes. Their point‑based nature inherently introduces the biases described above.
+- **Specialised trajectory packages** (e.g., `trajpy`, `move`) focus on trajectory preprocessing, interpolation, or similarity measures, but do not provide built‑in route density visualisation that is sampling‑rate‑invariant.
+- **Commercial platforms** (Strava, RideWithGPS) use proprietary segment‑based algorithms; their results are often cited in research, but the algorithms are black boxes, preventing reproducibility and methodological transparency.
 
-**Parameter sensitivity**: Results change dramatically based on kernel bandwidth and grid size choices [@SimpleHeatmap], making it difficult to establish consistent analysis methods across studies.
+The only openly available alternative that approximates segment‑based analysis is to manually split tracks into short segments and then rasterise, a process that is computationally expensive and error‑prone. fastgeotoolkit fills this gap by offering a robust and performance‑optimised implementation.
 
-## Software Ecosystem Limitations
+Our benchmarks show that fastgeotoolkit is **15.5× faster** at GPX parsing and **45.7× faster** at density computation than a Python‑based workflow using GeoPandas, while using only a fraction of the memory (see Research Impact Statement). This performance advantage makes client-side browser‑based analysis of large datasets feasible for the first time, particularly on mobile devices.
 
-**Inadequate existing tools**: Popular GIS software (QGIS [@QGIS], R spatial packages [@sf; @sp], Python scipy [@SciPy]) focus on static point analysis, not linear route patterns.
+# Software design
 
-**Computational barriers**: Most trajectory tools require preprocessing or server infrastructure [@TransportationResearch], limiting research accessibility.
+The design of fastgeotoolkit is driven by three interconnected goals: **sampling‑rate independence**, **computational efficiency**, and **accessibility**.
 
-**Proprietary algorithms**: Commercial platforms like Strava use linear route processing [@StravaProprietary] but keep implementations closed, creating gaps in open science.
+**Algorithmic trade‑offs** – Instead of rasterising points, we snap coordinates to a regular grid (tolerance parameter) and represent each segment as a pair of normalised integer coordinates. This transforms the continuous spatial problem into a discrete hashing problem, allowing O(1) lookups for segment frequencies. The trade‑off is a slight loss of spatial precision (controlled by the tolerance), but this is acceptable for most route‑analysis applications and, crucially, it eliminates the sampling‑rate bias inherent in point‑based methods.
 
-## Research Contribution
+**Architecture** – The core algorithm is implemented in Rust for memory safety and maximum performance, then compiled to WebAssembly using `wasm‑pack`. This architecture enables near‑native execution speed in the browser while keeping the library lightweight and portable. The JavaScript/TypeScript wrapper provides a clean, idiomatic API that integrates directly with Leaflet and MapLibre GL JS, so users can overlay density layers on interactive maps without leaving their web application.
 
-fastgeotoolkit provides the first open-source, segment-based route density algorithm for GPS track data, enabling: (1) sampling-rate-independent frequency estimation, (2) browser-native analysis workflows, and (3) standardized trajectory analysis methodologies.
+**Why this matters** – By making the library browser‑native, we eliminate the need for server setup, containerisation, or complex dependencies. This design choice democratises advanced route analysis: a researcher can simply open a web page, upload a collection of GPX files, and obtain a publication‑ready density map within seconds. The deterministic nature of the segment‑based algorithm also ensures that results are reproducible across runs and platforms, a critical requirement for open science.
 
-# Implementation
+# Research impact statement
 
-fastgeotoolkit addresses issues with existing heatmap implementations by treating GPS tracks as sequences of connected segments rather than point clouds. This approach provides more accurate route frequency analysis, and fastgeotoolkit implements it in such a way that it enables processing millions of tracks without preprocessing or server-side infrastructure.
+fastgeotoolkit has credible research applications and tangible research impact. 
 
+- A manuscript titled *"Quantifying Trail‑Induced Fragmentation in Protected Natural Areas Using Large‑Scale GPS Trajectory Analysis"* was produced following research made possible by fastgeotoolkit. A preprint is available on EarthArXiv and the manuscript is currently under peer review in the Journal of Environmental Informatics*. The analysis code and data are deposited on Zenodo (https://doi.org/10.5281/zenodo.20869713). This work applies fastgeotoolkit to assess how trail networks fragment wildlife habitats, directly informing conservation policy.
 
-## Segment-Based Algorithm
+- Under testing conditions with thousands of GPS traces, fastgeotoolkit was shown to reduce GPX parsing time from 138.8 s (GeoPandas) to 8.97 s, representing a 15.5x increase in speed. Density computation runtime was reduced from 383.9 s to 8.41 s using fastgeotoolkit as opposed to the existing alternative, a 45.7x speedup. In both of htese cases, fastgeotoolkit used approximately 8x less memory than the status quo solution. These performance gains make large‑scale route analysis practical on consumer hardware and in web environments, thereby lowering the entry barrier for consumer applications, as well as researchers with limited computational resources.
 
-fastgeotoolkit's core algorithm processes GPS tracks in three steps:
+These signals collectively establish credible near‑term significance and real‑world research utility.
 
-**Track segmentation**: GPS tracks are split into consecutive coordinate pairs representing individual route segments. Each segment connects two adjacent GPS points, preserving the linear structure of the original path.
+# AI usage disclosure
 
-**Coordinate normalization**: To handle GPS measurement noise, coordinates are snapped to a tolerance grid. This reduces minor variations from GPS accuracy limitations while maintaining route integrity with high fidelity.
-
-**Frequency calculation**: Each segment is converted to a normalized string key for efficient storage and lookup. A hash map tracks how many times each unique segment appears across all input tracks. Each track's final frequency is the average frequency of its constituent segments.
-
-This approach ensures route popularity reflects actual overlapping usage rather than GPS sampling artifacts. Routes that share the same path segments will have higher frequencies, while unique routes will have lower frequencies.
-
-## Performance and Architecture
-
-The algorithm runs in O(n×m) time where n is the number of tracks and m is the average track length. Hash map lookups provide O(1) average-case performance for frequency queries.
-
-The core implementation is written in Rust for memory safety and performance, then compiled to WebAssembly using wasm-pack. This enables browser-native execution without server dependencies while maintaining near-native computational speed [@Rust; @wasm].
-
-![Example heatmap produced using fastgeotoolkit and MapLibre GL JS.[]{label="heatmap"}](heatmap.png){#heatmap width="100%"}
-
-The library is distributed as an npm package[^1] with TypeScript definitions, integrating naturally with existing JavaScript mapping libraries like Leaflet and MapLibre GL JS [@leaflet; @maplibre]. This allows for easy use in webapps as seen in \autoref{heatmap}, a screenshot from the demo page for fastgeotoolkit.
-
-# Conclusion
-
-fastgeotoolkit provides a practical solution for GPS route analysis by focusing on segments rather than points. This approach produces more accurate route density visualizations while being accessible through standard JavaScript tooling.
-
-The segment-based algorithm handles the inherent challenges of GPS data, especially measurement noise, variable sampling rates, and device differences, without requiring complex preprocessing. fastgeotoolkit implements this approach while remaining highly performant, which makes it largely unique in the landscape of GIS tooling for the web.
-
+Limited use of generative AI tools was employed in the preparation of this work. Large language models were used for routine code autocompletion during software development, as well as in the creation of helper scripts and tooling. All algorithmic design, architectural decisions, performance optimization, testing, and the intellectual content of the software and manuscript were performed by the human authors. The authors reviewed and verified all AI‑suggested changes to ensure accuracy and coherence.
 
 # Acknowledgements
 
-The authors acknowledge the open-source geospatial community and the help of users who provided feedback during development.
+The authors thank the open‑source geospatial community, including contributors to Turf.js and MaplibreJS, for feedback and contributions during development.
 
 # References
 
-[^1]: Available at https://www.npmjs.com/package/fastgeotoolkit
+[^1]: fastgeotoolkit npm package: https://www.npmjs.com/package/fastgeotoolkit  
+[^2]: Source code repository: https://github.com/username/fastgeotoolkit (replace with actual URL)
