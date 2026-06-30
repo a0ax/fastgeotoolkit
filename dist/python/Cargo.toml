@@ -1,10 +1,10 @@
 [package]
 name = "fastgeotoolkit"
-version = "0.1.7"
+version = "0.3.3"
 edition = "2021"
 description = "A fast and comprehensive geospatial toolkit for processing GPS tracks, trajectories, and coordinate data from GPX, FIT, and polyline formats"
 license = "MIT"
-repository = "https://github.com/a0a7/fastgeotoolkit"
+repository = "https://github.com/a0ax/fastgeotoolkit"
 authors = ["a0a7"]
 keywords = ["gps", "geospatial", "trajectory", "fast", "toolkit"]
 categories = ["wasm", "science", "visualization"]
@@ -14,7 +14,7 @@ readme = "README.md"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-pyo3 = { version = "0.20", features = ["extension-module"] }
+pyo3 = { version = "0.26", features = ["extension-module"] }
 gpx = "0.10"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
