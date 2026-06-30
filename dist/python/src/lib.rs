@@ -217,7 +217,7 @@ pub fn is_valid_coordinate(lat: f64, lon: f64) -> bool {
     if lat < -90.0 || lat > 90.0 || lon < -180.0 || lon > 180.0 {
         return false;
     }
-    if (lat == 0.0 && lon == 0.0) || lat.is_nan() || lon.is_nan() || lat.is_infinite() || lon.is_infinite() {
+    if lat.is_nan() || lon.is_nan() || lat.is_infinite() || lon.is_infinite() {
         return false;
     }
     true
