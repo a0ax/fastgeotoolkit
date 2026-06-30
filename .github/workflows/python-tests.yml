@@ -59,4 +59,4 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest tests/fastgeotoolkit-test.py -v
+          pytest .github/workflows/tests.py -v
