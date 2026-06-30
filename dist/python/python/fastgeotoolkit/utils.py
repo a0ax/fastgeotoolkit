@@ -33,63 +33,32 @@ from . import process_gpx_files, coordinates_to_geojson
 
 
 def load_gpx_file(file_path: Union[str, Path]) -> HeatmapResult:
-    """
-    Load and process a single GPX file.
-    
-    Args:
-        file_path: Path to the GPX file
-        
-    Returns:
-        HeatmapResult with route density analysis
-        
-    Raises:
-        FileNotFoundError: If the file doesn't exist
-        ValueError: If the file cannot be processed
-    """
     file_path = Path(file_path)
     if not file_path.exists():
         raise FileNotFoundError(f"GPX file not found: {file_path}")
-    
     with open(file_path, 'rb') as f:
         file_data = f.read()
-    
     try:
-        result = process_gpx_files([file_data])
-        return result
+        raw = process_gpx_files([file_data])
+        tracks = [HeatmapTrack(track['coordinates'], track['frequency']) for track in raw['tracks']]
+        return HeatmapResult(tracks, raw['max_frequency'])
     except Exception as e:
         raise ValueError(f"Failed to process GPX file {file_path}: {e}")
 
-
 def load_multiple_gpx_files(file_paths: List[Union[str, Path]]) -> HeatmapResult:
-    """
-    Load and process multiple GPX files into a combined heatmap.
-    
-    Args:
-        file_paths: List of paths to GPX files
-        
-    Returns:
-        Combined HeatmapResult with route density analysis
-        
-    Raises:
-        FileNotFoundError: If any file doesn't exist
-        ValueError: If any file cannot be processed
-    """
     file_data_list = []
-    
     for file_path in file_paths:
         file_path = Path(file_path)
         if not file_path.exists():
             raise FileNotFoundError(f"GPX file not found: {file_path}")
-        
         with open(file_path, 'rb') as f:
             file_data_list.append(f.read())
-    
     try:
-        result = process_gpx_files(file_data_list)
-        return result
+        raw = process_gpx_files(file_data_list)
+        tracks = [HeatmapTrack(track['coordinates'], track['frequency']) for track in raw['tracks']]
+        return HeatmapResult(tracks, raw['max_frequency'])
     except Exception as e:
         raise ValueError(f"Failed to process GPX files: {e}")
-
 
 def save_heatmap_to_geojson(
     heatmap: HeatmapResult, 

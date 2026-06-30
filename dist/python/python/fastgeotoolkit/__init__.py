@@ -7,6 +7,7 @@ from ._fastgeotoolkit import (
     # Core processing functions
     process_gpx_files,
     decode_polyline,
+    process_polyline,
     process_polylines,
     
     # Analysis functions
@@ -52,10 +53,13 @@ from .utils import (
     save_heatmap_to_geojson,
     visualize_heatmap,
     create_folium_map,
+    calculate_heatmap_statistics,   # <-- added
+    numpy_to_coordinates,           # <-- added
+    coordinates_to_numpy,           # <-- added
 )
 
-__version__ = "0.1.7"
-__author__ = "a0a7"
+__version__ = "0.3.7"
+__author__ = "a0ax"
 __email__ = "contact@a0.ax"
 __license__ = "MIT"
 
@@ -63,6 +67,7 @@ __all__ = [
     # Core functions
     "process_gpx_files",
     "decode_polyline",
+    "process_polyline",
     "process_polylines",
     
     # Analysis functions
@@ -96,6 +101,9 @@ __all__ = [
     "save_heatmap_to_geojson",
     "visualize_heatmap",
     "create_folium_map",
+    "calculate_heatmap_statistics",   # <-- added
+    "numpy_to_coordinates",           # <-- added
+    "coordinates_to_numpy",           # <-- added
     
     # Types
     "Coordinate",
