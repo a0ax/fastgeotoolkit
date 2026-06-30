@@ -1,11 +1,11 @@
 [package]
 name = "fastgeotoolkit"
-version = "0.1.7"
+version = "0.3.3"
 edition = "2021"
 description = "A novel high-performance geospatial analysis framework with advanced route density mapping algorithms"
 license = "MIT"
-repository = "https://github.com/a0a7/fastgeotoolkit"
-homepage = "https://github.com/a0a7/fastgeotoolkit"
+repository = "https://github.com/a0ax/fastgeotoolkit"
+homepage = "https://github.com/a0ax/fastgeotoolkit"
 documentation = "https://docs.rs/fastgeotoolkit"
 authors = ["a0a7"]
 keywords = ["gps", "geospatial", "trajectory", "route-density", "heatmap"]
