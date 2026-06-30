@@ -4,15 +4,15 @@ build-backend = "maturin"
 
 [project]
 name = "fastgeotoolkit"
-version = "0.1.7"
+version = "0.3.3"
 description = "High-performance geospatial analysis framework"
 authors = [
     {name = "a0a7", email = "contact@a0.ax"}
 ]
 license = {text = "MIT"}
 readme = "README.md"
-homepage = "https://github.com/a0a7/fastgeotoolkit"
-repository = "https://github.com/a0a7/fastgeotoolkit"
+homepage = "https://github.com/a0ax/fastgeotoolkit"
+repository = "https://github.com/a0ax/fastgeotoolkit"
 documentation = "https://fastgeotoolkit.readthedocs.io"
 keywords = [
     "gps", "geospatial", "trajectory", "route-density", "heatmap", 
@@ -63,9 +63,9 @@ all = [
 ]
 
 [project.urls]
-"Bug Reports" = "https://github.com/a0a7/fastgeotoolkit/issues"
-"Source" = "https://github.com/a0a7/fastgeotoolkit"
-"Documentation" = "https://fastgeotoolkit.readthedocs.io"
+"Bug Reports" = "https://github.com/a0ax/fastgeotoolkit/issues"
+"Source" = "https://github.com/a0ax/fastgeotoolkit"
+"Documentation" = "https://fastgeotoolkit.pages.dev/"
 
 [tool.maturin]
 python-source = "python"
