@@ -58,7 +58,7 @@ from .utils import (
     coordinates_to_numpy, 
 )
 
-__version__ = "0.4.0"
+__version__ = "0.4.1"
 __author__ = "a0ax"
 __email__ = "contact@a0.ax"
 __license__ = "MIT"
