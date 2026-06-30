@@ -35,15 +35,15 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cargo/registry
-          key: ${{ runner.os }}-cargo-registry-${{ hashFiles('**/Cargo.lock') }}
+          key: ${{ runner.os }}-cargo-registry-${{ hashFiles('dist/python/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-cargo-registry-
 
       - name: Cache cargo build
         uses: actions/cache@v4
         with:
-          path: target
-          key: ${{ runner.os }}-cargo-build-${{ hashFiles('**/Cargo.lock') }}
+          path: dist/python/target
+          key: ${{ runner.os }}-cargo-build-${{ hashFiles('dist/python/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-cargo-build-
 
@@ -54,9 +54,9 @@ jobs:
 
       - name: Build and install package
         run: |
-          maturin build --release
-          pip install target/wheels/*.whl
+          maturin build --release --manifest-path dist/python/Cargo.toml
+          pip install dist/python/target/wheels/*.whl
 
       - name: Run tests
         run: |
-          pytest .github/workflows/tests.py -v
+          pytest tests/fastgeotoolkit-test.py -v
