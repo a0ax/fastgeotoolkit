@@ -2,6 +2,9 @@ use gpx::read;
 use std::io::Cursor;
 use serde::{Serialize, Deserialize};
 use std::collections::HashMap;
+use pyo3::prelude::*;
+use pyo3::types::PyModule;
+use pyo3::Bound;
 
 #[cfg(target_arch = "wasm32")]
 use wasm_bindgen::prelude::*;
@@ -1877,9 +1880,8 @@ fn py_export_to_gpx(tracks: Vec<Vec<[f64; 2]>>) -> String {
     export_to_gpx_rust(&tracks)
 }
 
-/// PyO3 module definition
 #[pymodule]
-fn fastgeotoolkit(_py: Python, m: &PyModule) -> PyResult<()> {
+fn fastgeotoolkit(_py: Python<'_>, m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(py_decode_polyline, m)?)?;
     m.add_function(wrap_pyfunction!(py_validate_coordinates, m)?)?;
     m.add_function(wrap_pyfunction!(py_calculate_track_statistics, m)?)?;
