@@ -53,12 +53,12 @@ from .utils import (
     save_heatmap_to_geojson,
     visualize_heatmap,
     create_folium_map,
-    calculate_heatmap_statistics,   # <-- added
-    numpy_to_coordinates,           # <-- added
-    coordinates_to_numpy,           # <-- added
+    calculate_heatmap_statistics, 
+    numpy_to_coordinates,          
+    coordinates_to_numpy, 
 )
 
-__version__ = "0.3.7"
+__version__ = "0.3.8"
 __author__ = "a0ax"
 __email__ = "contact@a0.ax"
 __license__ = "MIT"
