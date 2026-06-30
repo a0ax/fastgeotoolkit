@@ -1,5 +1,5 @@
 """
-Type definitions for fastGeoToolkit.
+Type definitions for fastgeotoolkit.
 
 This module provides Python type hints for all data structures used in the library.
 """

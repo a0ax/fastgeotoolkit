@@ -126,7 +126,7 @@ def save_heatmap_to_geojson(
         "properties": {
             "total_tracks": len(heatmap.tracks),
             "max_frequency": heatmap.max_frequency,
-            "generated_by": "fastGeoToolkit"
+            "generated_by": "fastgeotoolkit"
         }
     }
     
