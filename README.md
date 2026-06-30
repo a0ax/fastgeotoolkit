@@ -1,4 +1,3 @@
-crat
 # fastgeotoolkit [![npm](https://img.shields.io/npm/v/fastgeotoolkit)](https://www.npmjs.com/package/fastgeotoolkit) ![PyPI - Version](https://img.shields.io/pypi/v/fastgeotoolkit?link=https%3A%2F%2Fpypi.org%2Fproject%2Ffastgeotoolkit%2F) [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20948474-blue)](https://doi.org/10.5281/zenodo.20869786) [![Docs](https://img.shields.io/badge/Docs-skyblue?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDcuMC4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjUgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZD0iTTQ4MCA1NzZMMTkyIDU3NkMxMzkgNTc2IDk2IDUzMyA5NiA0ODBMOTYgMTYwQzk2IDEwNyAxMzkgNjQgMTkyIDY0TDQ5NiA2NEM1MjIuNSA2NCA1NDQgODUuNSA1NDQgMTEyTDU0NCA0MDBDNTQ0IDQyMC45IDUzMC42IDQzOC43IDUxMiA0NDUuM0w1MTIgNTEyQzUyOS43IDUxMiA1NDQgNTI2LjMgNTQ0IDU0NEM1NDQgNTYxLjcgNTI5LjcgNTc2IDUxMiA1NzZMNDgwIDU3NnpNMTkyIDQ0OEMxNzQuMyA0NDggMTYwIDQ2Mi4zIDE2MCA0ODBDMTYwIDQ5Ny43IDE3NC4zIDUxMiAxOTIgNTEyTDQ0OCA1MTJMNDQ4IDQ0OEwxOTIgNDQ4ek0yMjQgMjE2QzIyNCAyMjkuMyAyMzQuNyAyNDAgMjQ4IDI0MEw0MjQgMjQwQzQzNy4zIDI0MCA0NDggMjI5LjMgNDQ4IDIxNkM0NDggMjAyLjcgNDM3LjMgMTkyIDQyNCAxOTJMMjQ4IDE5MkMyMzQuNyAxOTIgMjI0IDIwMi43IDIyNCAyMTZ6TTI0OCAyODhDMjM0LjcgMjg4IDIyNCAyOTguNyAyMjQgMzEyQzIyNCAzMjUuMyAyMzQuNyAzMzYgMjQ4IDMzNkw0MjQgMzM2QzQzNy4zIDMzNiA0NDggMzI1LjMgNDQ4IDMxMkM0NDggMjk4LjcgNDM3LjMgMjg4IDQyNCAyODhMMjQ4IDI4OHoiLz48L3N2Zz4=)](https://fastgeotoolkit.pages.dev/) [![Demo](https://img.shields.io/badge/Try%20the%20demo-lightblue)](https://fastgeotoolkit-demo.pages.dev/)
 
 
@@ -202,8 +201,6 @@ import { processGpxFiles } from 'fastgeotoolkit';
 
 ## Performance Notes
 
-- WebAssembly provides near-native performance for GPS processing
-- Large datasets (thousands of tracks) process quickly
 - First function call initializes WebAssembly (adds ~100ms startup time)
 
 ## Common Issues
@@ -222,53 +219,6 @@ const uint8Array = new Uint8Array(buffer);
 
 This project consists of Rust code compiled to WebAssembly with JavaScript/TypeScript bindings.
 
-### Project Structure
-
-- `/src/` - Rust source code
-- `/dist/javascript/` - JavaScript/TypeScript bindings and NPM package
-- `/dist/wasm/` - Generated WebAssembly files
-- `/demo/` - Demo application (SvelteKit)
-- `/docs/` - Generated documentation
-> [!NOTE]
-> `/dist/python` and `/dist/rust/` contain WIP releases for their respective ecosystems, but they're not in working order yet.
-
-### Compiling Rust to WebAssembly
-
-To compile the Rust code to WebAssembly:
-
-```bash
-# Install wasm-pack if you haven't already
-cargo install wasm-pack
-
-# Build the WebAssembly module
-wasm-pack build --target web --out-dir dist/wasm
-```
-
-### Building the NPM Package
-
-To build the complete NPM package with all bindings:
-
-```bash
-# From the root directory
-npm run build
-
-# Or build individual components:
-npm run build:wasm    # Build WebAssembly
-npm run build:js      # Build JavaScript bindings
-npm run build:docs    # Build documentation
-```
-
-### Building Documentation
-
-The documentation is generated using TypeDoc and can be built locally:
-
-```bash
-cd dist/javascript
-npm run docs
-```
-
-This will generate the documentation website in the `docs/` directory.
-
 ### Testing
 
 ```bash
@@ -279,7 +229,8 @@ cargo test
 cd dist/javascript
 npm test
 ```
-
+Python tests are located in the github CI folder and are made to be ran after installing with pip
+ 
 ## License
 
 MIT
