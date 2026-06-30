@@ -1065,6 +1065,7 @@ fn export_to_gpx(tracks: Vec<Vec<(f64, f64)>>) -> String {
 
 // ----- New functions that were missing -----
 #[pyfunction]
+#[pyo3(signature = (coordinates, properties=None))]
 fn coordinates_to_geojson(coordinates: Vec<(f64, f64)>, properties: Option<PyObject>) -> PyResult<PyObject> {
     Python::with_gil(|py| {
         let props = if let Some(p) = properties { p } else { PyDict::new(py).into() };
