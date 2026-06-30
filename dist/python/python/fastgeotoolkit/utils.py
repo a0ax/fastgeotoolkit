@@ -145,7 +145,7 @@ def create_folium_map(
     
     # Create color scale
     max_freq = heatmap.max_frequency
-    colormap_obj = folium.colormap.linear.YlOrRd_09.scale(1, max_freq)
+    colormap_obj = folium.LinearColormap(['yellow', 'orange', 'red'], vmin=1, vmax=max_freq)
     
     # Add tracks to map
     for i, track in enumerate(heatmap.tracks):
