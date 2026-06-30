@@ -54,6 +54,7 @@ jobs:
 
       - name: Build and install package
         run: |
+          rm -f dist/python/target/wheels/*.whl  # Linux/macOS
           maturin build --release --manifest-path dist/python/Cargo.toml
           pip install dist/python/target/wheels/*.whl
 
