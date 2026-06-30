@@ -4,6 +4,7 @@
 <!--[![codecov](https://codecov.io/gh/a0a7/fastgeotoolkit/branch/main/graph/badge.svg)](https://codecov.io/gh/a0a7/fastgeotoolkit)-->
 [![Rust Tests](https://github.com/a0a7/fastgeotoolkit/actions/workflows/rust-tests.yml/badge.svg)](https://github.com/a0a7/fastgeotoolkit/actions/workflows/rust-tests.yml)
 [![JavaScript Tests](https://github.com/a0a7/fastgeotoolkit/actions/workflows/javascript-tests.yml/badge.svg)](https://github.com/a0a7/fastgeotoolkit/actions/workflows/javascript-tests.yml)
+[![Python Tests](https://github.com/a0ax/fastgeotoolkit/actions/workflows/python-tests.yml/badge.svg)](https://github.com/a0ax/fastgeotoolkit/actions/workflows/python-tests.yml)
 [![CodeQL](https://github.com/a0a7/fastgeotoolkit/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/a0a7/fastgeotoolkit/actions/workflows/github-code-scanning/codeql)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
